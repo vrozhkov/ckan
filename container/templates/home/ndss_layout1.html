@@ -1,0 +1,38 @@
+<div class="silder">
+    {% block slider %}
+        {% snippet 'home/snippets/ndss_slider.html' %}
+    {% endblock %}
+</div>
+
+<div class="Search-box Search-hometwo-box">
+    {% block search %}
+        {% snippet 'home/snippets/ndss_search.html' %}
+    {% endblock %}
+</div>
+
+<div class="welcome-bg">
+    {% block welcome %}
+        {% snippet 'home/snippets/ndss_welcome.html' %}
+    {% endblock %}
+</div>
+
+{% block content %}
+    <div class="contain-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        {% block featured_group %}
+                            {% snippet 'home/snippets/ndss_featured_group.html' %}
+                        {% endblock %}
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home-sect-mobile">
+                        {% block featured_organization %}
+                            {% snippet 'home/snippets/ndss_featured_organization.html' %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

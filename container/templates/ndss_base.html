@@ -1,0 +1,73 @@
+{%- block doctype %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">{% endblock -%}
+
+{%- block htmltag -%}
+{% set lang = h.lang() %}
+<!--[if IE 7]> <html lang="{{ lang }}" class="ie ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="{{ lang }}" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="{{ lang }}" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="{{ lang }}" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+{%- endblock -%}
+
+<head{% block headtag %}{% endblock %}>
+{%- block meta -%}
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+{%- endblock -%}
+
+<title>
+{%- block title -%}
+{%- block subtitle %}{% endblock -%}
+{%- if self.subtitle()|trim %} {{ g.template_title_deliminater }} {% endif -%}
+ndss
+{%- endblock -%}
+</title>
+
+{% block links -%}
+<link rel="shortcut icon" href="{{ g.favicon }}" />
+<link rel="stylesheet" type="text/css" href="ndss/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="ndss/css/style.css" />
+<link rel="stylesheet" type="text/css" href="ndss/css/font-awesome.min.css" />
+<!-- start of silderbar css link -->
+<link  rel="stylesheet" type="text/css" href="ndss/css/owl.carousel.css" />
+<link  rel="stylesheet" type="text/css" href="ndss/css/owl.theme.css" />
+<!-- end of customsilderbar css link -->
+{% endblock -%}
+
+{%- block styles %}
+  {% resource g.main_css[6:] %}
+{% endblock %}
+
+{% block head_extras %}
+  {{ g.template_head_end | safe }}
+{% endblock %}
+
+{%- block custom_styles %}
+  {%- if g.site_custom_css -%}
+  <style>
+    {{ g.site_custom_css | safe }}
+  </style>
+  {%- endif %}
+{% endblock %}
+</head>
+
+<body{% block bodytag %} data-site-root="{{ h.url_for('/', locale='default', qualified=true) }}" data-locale-root="{{ h.url_for('/', qualified=true) }}" {% endblock %}>
+
+{%- block page %}{% endblock -%}
+
+{%- block scripts %}
+{% endblock -%}
+{% block body_extras -%}
+  {{ g.template_footer_end | safe }}
+{%- endblock %}
+{% block main_scripts -%}
+<script type="text/javascript" src="ndss/js/jquery.min.js"></script>
+<!-- start of silderbar js link -->
+<script type="text/javascript" src="ndss/js/owl.carousel.js"></script>
+<!-- end of  silderbar js link -->
+<script type="text/javascript" src="ndss/js/main.js"></script>
+{% endblock -%}
+
+</body>
+</html>

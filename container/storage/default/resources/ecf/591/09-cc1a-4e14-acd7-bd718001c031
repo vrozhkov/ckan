@@ -1,0 +1,751 @@
+State,Area,Member,Total_Registrants,Registrants,Area_Population,% of Population
+ACT,Canberra,Registrants,8297,,182452,0.045474
+ACT,Canberra,Gestational,,263,,
+ACT,Canberra,Other,,39,,
+ACT,Canberra,Type 1,,934,,
+ACT,Canberra,Type 2,,7060,,
+ACT,Fraser,Registrants,8047,,203867,0.039471
+ACT,Fraser,Gestational,,444,,
+ACT,Fraser,Other,,42,,
+ACT,Fraser,Type 1,,908,,
+ACT,Fraser,Type 2,,6653,,
+NSW,Banks,Registrants,7921,,164550,0.048137
+NSW,Banks,Gestational,,306,,
+NSW,Banks,Other,,56,,
+NSW,Banks,Type 1,,780,,
+NSW,Banks,Type 2,,6779,,
+NSW,Barton,Registrants,8407,,158051,0.053191
+NSW,Barton,Gestational,,362,,
+NSW,Barton,Other,,62,,
+NSW,Barton,Type 1,,897,,
+NSW,Barton,Type 2,,7087,,
+NSW,Bennelong,Registrants,7663,,165428,0.046322
+NSW,Bennelong,Gestational,,294,,
+NSW,Bennelong,Other,,47,,
+NSW,Bennelong,Type 1,,763,,
+NSW,Bennelong,Type 2,,6560,,
+NSW,Berowra,Registrants,5843,,146528,0.039876
+NSW,Berowra,Gestational,,149,,
+NSW,Berowra,Other,,52,,
+NSW,Berowra,Type 1,,664,,
+NSW,Berowra,Type 2,,4978,,
+NSW,Blaxland,Registrants,11399,,175397,0.064989
+NSW,Blaxland,Gestational,,462,,
+NSW,Blaxland,Other,,72,,
+NSW,Blaxland,Type 1,,876,,
+NSW,Blaxland,Type 2,,9989,,
+NSW,Bradfield,Registrants,5336,,159408,0.033473
+NSW,Bradfield,Gestational,,166,,
+NSW,Bradfield,Other,,44,,
+NSW,Bradfield,Type 1,,677,,
+NSW,Bradfield,Type 2,,4450,,
+NSW,Calare,Registrants,8614,,161269,0.053413
+NSW,Calare,Gestational,,148,,
+NSW,Calare,Other,,43,,
+NSW,Calare,Type 1,,1045,,
+NSW,Calare,Type 2,,7376,,
+NSW,Charlton,Registrants,8396,,146349,0.057369
+NSW,Charlton,Gestational,,204,,
+NSW,Charlton,Other,,40,,
+NSW,Charlton,Type 1,,926,,
+NSW,Charlton,Type 2,,7227,,
+NSW,Chifley,Registrants,13815,,184886,0.074721
+NSW,Chifley,Gestational,,442,,
+NSW,Chifley,Other,,71,,
+NSW,Chifley,Type 1,,1072,,
+NSW,Chifley,Type 2,,12229,,
+NSW,Cook,Registrants,5772,,153203,0.037675
+NSW,Cook,Gestational,,196,,
+NSW,Cook,Other,,41,,
+NSW,Cook,Type 1,,766,,
+NSW,Cook,Type 2,,4769,,
+NSW,Cowper,Registrants,8020,,150149,0.053413
+NSW,Cowper,Gestational,,152,,
+NSW,Cowper,Other,,45,,
+NSW,Cowper,Type 1,,807,,
+NSW,Cowper,Type 2,,7016,,
+NSW,Cunningham,Registrants,8334,,161063,0.051743
+NSW,Cunningham,Gestational,,417,,
+NSW,Cunningham,Other,,59,,
+NSW,Cunningham,Type 1,,920,,
+NSW,Cunningham,Type 2,,6938,,
+NSW,Dobell,Registrants,8244,,153535,0.053694
+NSW,Dobell,Gestational,,118,,
+NSW,Dobell,Other,,43,,
+NSW,Dobell,Type 1,,918,,
+NSW,Dobell,Type 2,,7165,,
+NSW,Eden-Monaro,Registrants,7661,,149462,0.051257
+NSW,Eden-Monaro,Gestational,,157,,
+NSW,Eden-Monaro,Other,,44,,
+NSW,Eden-Monaro,Type 1,,782,,
+NSW,Eden-Monaro,Type 2,,6678,,
+NSW,Farrer,Registrants,9817,,150988,0.065018
+NSW,Farrer,Gestational,,222,,
+NSW,Farrer,Other,,84,,
+NSW,Farrer,Type 1,,822,,
+NSW,Farrer,Type 2,,8689,,
+NSW,Fowler,Registrants,11000,,165877,0.066314
+NSW,Fowler,Gestational,,409,,
+NSW,Fowler,Other,,76,,
+NSW,Fowler,Type 1,,839,,
+NSW,Fowler,Type 2,,9676,,
+NSW,Gilmore,Registrants,10373,,147067,0.070532
+NSW,Gilmore,Gestational,,264,,
+NSW,Gilmore,Other,,46,,
+NSW,Gilmore,Type 1,,929,,
+NSW,Gilmore,Type 2,,9134,,
+NSW,Grayndler,Registrants,6877,,163651,0.042022
+NSW,Grayndler,Gestational,,306,,
+NSW,Grayndler,Other,,56,,
+NSW,Grayndler,Type 1,,963,,
+NSW,Grayndler,Type 2,,5552,,
+NSW,Greenway,Registrants,10396,,172274,0.060345
+NSW,Greenway,Gestational,,329,,
+NSW,Greenway,Other,,73,,
+NSW,Greenway,Type 1,,889,,
+NSW,Greenway,Type 2,,9105,,
+NSW,Hughes,Registrants,7534,,157721,0.047767
+NSW,Hughes,Gestational,,282,,
+NSW,Hughes,Other,,57,,
+NSW,Hughes,Type 1,,864,,
+NSW,Hughes,Type 2,,6331,,
+NSW,Hume,Registrants,8433,,154692,0.054514
+NSW,Hume,Gestational,,172,,
+NSW,Hume,Other,,59,,
+NSW,Hume,Type 1,,914,,
+NSW,Hume,Type 2,,7288,,
+NSW,Hunter,Registrants,8345,,154284,0.054088
+NSW,Hunter,Gestational,,195,,
+NSW,Hunter,Other,,48,,
+NSW,Hunter,Type 1,,937,,
+NSW,Hunter,Type 2,,7165,,
+NSW,Kingsford Smith,Registrants,6646,,175343,0.037902
+NSW,Kingsford Smith,Gestational,,282,,
+NSW,Kingsford Smith,Other,,54,,
+NSW,Kingsford Smith,Type 1,,839,,
+NSW,Kingsford Smith,Type 2,,5471,,
+NSW,Lindsay,Registrants,10115,,166099,0.060897
+NSW,Lindsay,Gestational,,287,,
+NSW,Lindsay,Other,,67,,
+NSW,Lindsay,Type 1,,1129,,
+NSW,Lindsay,Type 2,,8631,,
+NSW,Lyne,Registrants,8160,,141722,0.057577
+NSW,Lyne,Gestational,,174,,
+NSW,Lyne,Other,,53,,
+NSW,Lyne,Type 1,,757,,
+NSW,Lyne,Type 2,,7176,,
+NSW,Macarthur,Registrants,8466,,156138,0.054221
+NSW,Macarthur,Gestational,,284,,
+NSW,Macarthur,Other,,73,,
+NSW,Macarthur,Type 1,,883,,
+NSW,Macarthur,Type 2,,7226,,
+NSW,Mackellar,Registrants,4857,,155412,0.031252
+NSW,Mackellar,Gestational,,149,,
+NSW,Mackellar,Other,,40,,
+NSW,Mackellar,Type 1,,698,,
+NSW,Mackellar,Type 2,,3969,,
+NSW,Macquarie,Registrants,6843,,153667,0.044531
+NSW,Macquarie,Gestational,,128,,
+NSW,Macquarie,Other,,38,,
+NSW,Macquarie,Type 1,,821,,
+NSW,Macquarie,Type 2,,5856,,
+NSW,McMahon,Registrants,11014,,160089,0.068799
+NSW,McMahon,Gestational,,327,,
+NSW,McMahon,Other,,72,,
+NSW,McMahon,Type 1,,822,,
+NSW,McMahon,Type 2,,9793,,
+NSW,Mitchell,Registrants,6691,,153394,0.043619
+NSW,Mitchell,Gestational,,170,,
+NSW,Mitchell,Other,,59,,
+NSW,Mitchell,Type 1,,621,,
+NSW,Mitchell,Type 2,,5842,,
+NSW,New England,Registrants,8842,,161492,0.054751
+NSW,New England,Gestational,,133,,
+NSW,New England,Other,,57,,
+NSW,New England,Type 1,,1018,,
+NSW,New England,Type 2,,7633,,
+NSW,Newcastle,Registrants,6868,,146795,0.046786
+NSW,Newcastle,Gestational,,177,,
+NSW,Newcastle,Other,,28,,
+NSW,Newcastle,Type 1,,854,,
+NSW,Newcastle,Type 2,,5808,,
+NSW,North Sydney,Registrants,5086,,164833,0.030855
+NSW,North Sydney,Gestational,,201,,
+NSW,North Sydney,Other,,46,,
+NSW,North Sydney,Type 1,,754,,
+NSW,North Sydney,Type 2,,4085,,
+NSW,Page,Registrants,8186,,147826,0.055375
+NSW,Page,Gestational,,136,,
+NSW,Page,Other,,42,,
+NSW,Page,Type 1,,794,,
+NSW,Page,Type 2,,7214,,
+NSW,Parkes,Registrants,10426,,168299,0.061949
+NSW,Parkes,Gestational,,149,,
+NSW,Parkes,Other,,60,,
+NSW,Parkes,Type 1,,991,,
+NSW,Parkes,Type 2,,9226,,
+NSW,Parramatta,Registrants,10631,,183608,0.0579
+NSW,Parramatta,Gestational,,408,,
+NSW,Parramatta,Other,,75,,
+NSW,Parramatta,Type 1,,834,,
+NSW,Parramatta,Type 2,,9314,,
+NSW,Paterson,Registrants,8651,,142807,0.060578
+NSW,Paterson,Gestational,,132,,
+NSW,Paterson,Other,,58,,
+NSW,Paterson,Type 1,,848,,
+NSW,Paterson,Type 2,,7613,,
+NSW,Reid,Registrants,8896,,185714,0.047901
+NSW,Reid,Gestational,,458,,
+NSW,Reid,Other,,53,,
+NSW,Reid,Type 1,,831,,
+NSW,Reid,Type 2,,7555,,
+NSW,Richmond,Registrants,6475,,149281,0.043374
+NSW,Richmond,Gestational,,132,,
+NSW,Richmond,Other,,44,,
+NSW,Richmond,Type 1,,695,,
+NSW,Richmond,Type 2,,5605,,
+NSW,Riverina,Registrants,8823,,161031,0.05479
+NSW,Riverina,Gestational,,235,,
+NSW,Riverina,Other,,56,,
+NSW,Riverina,Type 1,,879,,
+NSW,Riverina,Type 2,,7654,,
+NSW,Robertson,Registrants,6981,,150229,0.046469
+NSW,Robertson,Gestational,,128,,
+NSW,Robertson,Other,,42,,
+NSW,Robertson,Type 1,,832,,
+NSW,Robertson,Type 2,,5978,,
+NSW,Shortland,Registrants,7943,,142117,0.05589
+NSW,Shortland,Gestational,,114,,
+NSW,Shortland,Other,,37,,
+NSW,Shortland,Type 1,,876,,
+NSW,Shortland,Type 2,,6917,,
+NSW,Sydney,Registrants,4911,,190100,0.025833
+NSW,Sydney,Gestational,,273,,
+NSW,Sydney,Other,,66,,
+NSW,Sydney,Type 1,,858,,
+NSW,Sydney,Type 2,,3714,,
+NSW,Throsby,Registrants,9615,,148902,0.064572
+NSW,Throsby,Gestational,,397,,
+NSW,Throsby,Other,,58,,
+NSW,Throsby,Type 1,,982,,
+NSW,Throsby,Type 2,,8178,,
+NSW,Warringah,Registrants,4308,,163542,0.026341
+NSW,Warringah,Gestational,,168,,
+NSW,Warringah,Other,,47,,
+NSW,Warringah,Type 1,,727,,
+NSW,Warringah,Type 2,,3366,,
+NSW,Watson,Registrants,11153,,180693,0.061723
+NSW,Watson,Gestational,,503,,
+NSW,Watson,Other,,63,,
+NSW,Watson,Type 1,,986,,
+NSW,Watson,Type 2,,9602,,
+NSW,Wentworth,Registrants,4307,,174877,0.024628
+NSW,Wentworth,Gestational,,169,,
+NSW,Wentworth,Other,,65,,
+NSW,Wentworth,Type 1,,823,,
+NSW,Wentworth,Type 2,,3250,,
+NSW,Werriwa,Registrants,11488,,165092,0.069585
+NSW,Werriwa,Gestational,,492,,
+NSW,Werriwa,Other,,80,,
+NSW,Werriwa,Type 1,,975,,
+NSW,Werriwa,Type 2,,9941,,
+NT,Lingiari,Registrants,8208,,131853,0.062251
+NT,Lingiari,Gestational,,64,,
+NT,Lingiari,Other,,29,,
+NT,Lingiari,Type 1,,356,,
+NT,Lingiari,Type 2,,7759,,
+NT,Solomon,Registrants,5883,,124003,0.047442
+NT,Solomon,Gestational,,211,,
+NT,Solomon,Other,,41,,
+NT,Solomon,Type 1,,436,,
+NT,Solomon,Type 2,,5195,,
+QLD,Blair,Registrants,8444,,155173,0.054416
+QLD,Blair,Gestational,,317,,
+QLD,Blair,Other,,33,,
+QLD,Blair,Type 1,,779,,
+QLD,Blair,Type 2,,7314,,
+QLD,Bonner,Registrants,6477,,160952,0.040241
+QLD,Bonner,Gestational,,243,,
+QLD,Bonner,Other,,53,,
+QLD,Bonner,Type 1,,686,,
+QLD,Bonner,Type 2,,5496,,
+QLD,Bowman,Registrants,6958,,158368,0.043935
+QLD,Bowman,Gestational,,199,,
+QLD,Bowman,Other,,35,,
+QLD,Bowman,Type 1,,754,,
+QLD,Bowman,Type 2,,5969,,
+QLD,Brisbane,Registrants,3980,,165839,0.023999
+QLD,Brisbane,Gestational,,147,,
+QLD,Brisbane,Other,,33,,
+QLD,Brisbane,Type 1,,671,,
+QLD,Brisbane,Type 2,,3130,,
+QLD,Capricornia,Registrants,8695,,167750,0.051833
+QLD,Capricornia,Gestational,,193,,
+QLD,Capricornia,Other,,46,,
+QLD,Capricornia,Type 1,,760,,
+QLD,Capricornia,Type 2,,7696,,
+QLD,Dawson,Registrants,8480,,173178,0.048966
+QLD,Dawson,Gestational,,278,,
+QLD,Dawson,Other,,46,,
+QLD,Dawson,Type 1,,653,,
+QLD,Dawson,Type 2,,7504,,
+QLD,Dickson,Registrants,6156,,156200,0.039411
+QLD,Dickson,Gestational,,210,,
+QLD,Dickson,Other,,47,,
+QLD,Dickson,Type 1,,743,,
+QLD,Dickson,Type 2,,5155,,
+QLD,Fadden,Registrants,7142,,166589,0.042871
+QLD,Fadden,Gestational,,167,,
+QLD,Fadden,Other,,35,,
+QLD,Fadden,Type 1,,773,,
+QLD,Fadden,Type 2,,6167,,
+QLD,Fairfax,Registrants,5738,,150774,0.038056
+QLD,Fairfax,Gestational,,122,,
+QLD,Fairfax,Other,,30,,
+QLD,Fairfax,Type 1,,694,,
+QLD,Fairfax,Type 2,,4891,,
+QLD,Fisher,Registrants,6024,,142759,0.042196
+QLD,Fisher,Gestational,,123,,
+QLD,Fisher,Other,,42,,
+QLD,Fisher,Type 1,,679,,
+QLD,Fisher,Type 2,,5180,,
+QLD,Flynn,Registrants,8548,,169002,0.050579
+QLD,Flynn,Gestational,,253,,
+QLD,Flynn,Other,,36,,
+QLD,Flynn,Type 1,,739,,
+QLD,Flynn,Type 2,,7520,,
+QLD,Forde,Registrants,7701,,165615,0.046499
+QLD,Forde,Gestational,,283,,
+QLD,Forde,Other,,42,,
+QLD,Forde,Type 1,,780,,
+QLD,Forde,Type 2,,6596,,
+QLD,Griffith,Registrants,4954,,162912,0.030409
+QLD,Griffith,Gestational,,163,,
+QLD,Griffith,Other,,43,,
+QLD,Griffith,Type 1,,710,,
+QLD,Griffith,Type 2,,4039,,
+QLD,Groom,Registrants,8165,,159643,0.051145
+QLD,Groom,Gestational,,290,,
+QLD,Groom,Other,,30,,
+QLD,Groom,Type 1,,756,,
+QLD,Groom,Type 2,,7089,,
+QLD,Herbert,Registrants,7499,,170795,0.043906
+QLD,Herbert,Gestational,,275,,
+QLD,Herbert,Other,,43,,
+QLD,Herbert,Type 1,,688,,
+QLD,Herbert,Type 2,,6493,,
+QLD,Hinkler,Registrants,10000,,153744,0.065043
+QLD,Hinkler,Gestational,,187,,
+QLD,Hinkler,Other,,34,,
+QLD,Hinkler,Type 1,,776,,
+QLD,Hinkler,Type 2,,9002,,
+QLD,Kennedy,Registrants,9255,,176938,0.052306
+QLD,Kennedy,Gestational,,236,,
+QLD,Kennedy,Other,,33,,
+QLD,Kennedy,Type 1,,696,,
+QLD,Kennedy,Type 2,,8290,,
+QLD,Leichhardt,Registrants,8957,,185274,0.048344
+QLD,Leichhardt,Gestational,,257,,
+QLD,Leichhardt,Other,,33,,
+QLD,Leichhardt,Type 1,,752,,
+QLD,Leichhardt,Type 2,,7915,,
+QLD,Lilley,Registrants,7067,,166970,0.042324
+QLD,Lilley,Gestational,,210,,
+QLD,Lilley,Other,,54,,
+QLD,Lilley,Type 1,,799,,
+QLD,Lilley,Type 2,,6003,,
+QLD,Longman,Registrants,9058,,161730,0.056006
+QLD,Longman,Gestational,,400,,
+QLD,Longman,Other,,44,,
+QLD,Longman,Type 1,,790,,
+QLD,Longman,Type 2,,7824,,
+QLD,Maranoa,Registrants,9203,,169311,0.054355
+QLD,Maranoa,Gestational,,252,,
+QLD,Maranoa,Other,,39,,
+QLD,Maranoa,Type 1,,744,,
+QLD,Maranoa,Type 2,,8168,,
+QLD,McPherson,Registrants,5656,,161200,0.035086
+QLD,McPherson,Gestational,,157,,
+QLD,McPherson,Other,,30,,
+QLD,McPherson,Type 1,,699,,
+QLD,McPherson,Type 2,,4770,,
+QLD,Moncrieff,Registrants,6257,,168595,0.037112
+QLD,Moncrieff,Gestational,,145,,
+QLD,Moncrieff,Other,,42,,
+QLD,Moncrieff,Type 1,,698,,
+QLD,Moncrieff,Type 2,,5372,,
+QLD,Moreton,Registrants,6592,,166545,0.03958
+QLD,Moreton,Gestational,,245,,
+QLD,Moreton,Other,,40,,
+QLD,Moreton,Type 1,,618,,
+QLD,Moreton,Type 2,,5690,,
+QLD,Oxley,Registrants,7845,,165347,0.047445
+QLD,Oxley,Gestational,,301,,
+QLD,Oxley,Other,,29,,
+QLD,Oxley,Type 1,,731,,
+QLD,Oxley,Type 2,,6784,,
+QLD,Petrie,Registrants,8340,,159419,0.052314
+QLD,Petrie,Gestational,,385,,
+QLD,Petrie,Other,,43,,
+QLD,Petrie,Type 1,,805,,
+QLD,Petrie,Type 2,,7107,,
+QLD,Rankin,Registrants,9545,,192020,0.049708
+QLD,Rankin,Gestational,,413,,
+QLD,Rankin,Other,,44,,
+QLD,Rankin,Type 1,,741,,
+QLD,Rankin,Type 2,,8347,,
+QLD,Ryan,Registrants,4407,,168444,0.026162
+QLD,Ryan,Gestational,,148,,
+QLD,Ryan,Other,,28,,
+QLD,Ryan,Type 1,,664,,
+QLD,Ryan,Type 2,,3567,,
+QLD,Wide Bay,Registrants,8320,,155339,0.05356
+QLD,Wide Bay,Gestational,,130,,
+QLD,Wide Bay,Other,,42,,
+QLD,Wide Bay,Type 1,,744,,
+QLD,Wide Bay,Type 2,,7404,,
+QLD,Wright,Registrants,7227,,156566,0.046159
+QLD,Wright,Gestational,,189,,
+QLD,Wright,Other,,38,,
+QLD,Wright,Type 1,,709,,
+QLD,Wright,Type 2,,6291,,
+SA,Adelaide,Registrants,7240,,162113,0.04466
+SA,Adelaide,Gestational,,208,,
+SA,Adelaide,Other,,38,,
+SA,Adelaide,Type 1,,683,,
+SA,Adelaide,Type 2,,6310,,
+SA,Barker,Registrants,10246,,160457,0.063855
+SA,Barker,Gestational,,152,,
+SA,Barker,Other,,45,,
+SA,Barker,Type 1,,837,,
+SA,Barker,Type 2,,9212,,
+SA,Boothby,Registrants,7050,,145040,0.048607
+SA,Boothby,Gestational,,165,,
+SA,Boothby,Other,,30,,
+SA,Boothby,Type 1,,728,,
+SA,Boothby,Type 2,,6127,,
+SA,Grey,Registrants,11957,,156926,0.076195
+SA,Grey,Gestational,,157,,
+SA,Grey,Other,,58,,
+SA,Grey,Type 1,,870,,
+SA,Grey,Type 2,,10873,,
+SA,Hindmarsh,Registrants,7742,,148782,0.052035
+SA,Hindmarsh,Gestational,,148,,
+SA,Hindmarsh,Other,,37,,
+SA,Hindmarsh,Type 1,,681,,
+SA,Hindmarsh,Type 2,,6877,,
+SA,Kingston,Registrants,9390,,161201,0.05825
+SA,Kingston,Gestational,,189,,
+SA,Kingston,Other,,44,,
+SA,Kingston,Type 1,,987,,
+SA,Kingston,Type 2,,8170,,
+SA,Makin,Registrants,8680,,144142,0.060218
+SA,Makin,Gestational,,240,,
+SA,Makin,Other,,40,,
+SA,Makin,Type 1,,757,,
+SA,Makin,Type 2,,7644,,
+SA,Mayo,Registrants,7701,,150712,0.051097
+SA,Mayo,Gestational,,116,,
+SA,Mayo,Other,,41,,
+SA,Mayo,Type 1,,752,,
+SA,Mayo,Type 2,,6791,,
+SA,Port Adelaide,Registrants,11027,,173087,0.063707
+SA,Port Adelaide,Gestational,,311,,
+SA,Port Adelaide,Other,,42,,
+SA,Port Adelaide,Type 1,,872,,
+SA,Port Adelaide,Type 2,,9802,,
+SA,Sturt,Registrants,8071,,151518,0.053267
+SA,Sturt,Gestational,,178,,
+SA,Sturt,Other,,42,,
+SA,Sturt,Type 1,,669,,
+SA,Sturt,Type 2,,7182,,
+SA,Wakefield,Registrants,11618,,168293,0.069034
+SA,Wakefield,Gestational,,332,,
+SA,Wakefield,Other,,45,,
+SA,Wakefield,Type 1,,987,,
+SA,Wakefield,Type 2,,10253,,
+TAS,Bass,Registrants,5625,,104384,0.053887
+TAS,Bass,Gestational,,163,,
+TAS,Bass,Other,,54,,
+TAS,Bass,Type 1,,624,,
+TAS,Bass,Type 2,,4784,,
+TAS,Braddon,Registrants,5917,,103481,0.057179
+TAS,Braddon,Gestational,,73,,
+TAS,Braddon,Other,,30,,
+TAS,Braddon,Type 1,,588,,
+TAS,Braddon,Type 2,,5226,,
+TAS,Denison,Registrants,5002,,104328,0.047944
+TAS,Denison,Gestational,,122,,
+TAS,Denison,Other,,72,,
+TAS,Denison,Type 1,,604,,
+TAS,Denison,Type 2,,4204,,
+TAS,Franklin,Registrants,4787,,103175,0.046396
+TAS,Franklin,Gestational,,131,,
+TAS,Franklin,Other,,60,,
+TAS,Franklin,Type 1,,553,,
+TAS,Franklin,Type 2,,4043,,
+TAS,Lyons,Registrants,6108,,105882,0.057686
+TAS,Lyons,Gestational,,98,,
+TAS,Lyons,Other,,58,,
+TAS,Lyons,Type 1,,574,,
+TAS,Lyons,Type 2,,5378,,
+VIC,Aston,Registrants,7461,,146854,0.050805
+VIC,Aston,Gestational,,220,,
+VIC,Aston,Other,,51,,
+VIC,Aston,Type 1,,662,,
+VIC,Aston,Type 2,,6528,,
+VIC,Ballarat,Registrants,8466,,159341,0.053131
+VIC,Ballarat,Gestational,,178,,
+VIC,Ballarat,Other,,45,,
+VIC,Ballarat,Type 1,,845,,
+VIC,Ballarat,Type 2,,7398,,
+VIC,Batman,Registrants,7161,,153851,0.046545
+VIC,Batman,Gestational,,264,,
+VIC,Batman,Other,,38,,
+VIC,Batman,Type 1,,732,,
+VIC,Batman,Type 2,,6128,,
+VIC,Bendigo,Registrants,8321,,157203,0.052931
+VIC,Bendigo,Gestational,,178,,
+VIC,Bendigo,Other,,47,,
+VIC,Bendigo,Type 1,,937,,
+VIC,Bendigo,Type 2,,7160,,
+VIC,Bruce,Registrants,9688,,152200,0.063653
+VIC,Bruce,Gestational,,331,,
+VIC,Bruce,Other,,33,,
+VIC,Bruce,Type 1,,649,,
+VIC,Bruce,Type 2,,8676,,
+VIC,Calwell,Registrants,11503,,188753,0.060942
+VIC,Calwell,Gestational,,437,,
+VIC,Calwell,Other,,41,,
+VIC,Calwell,Type 1,,872,,
+VIC,Calwell,Type 2,,10152,,
+VIC,Casey,Registrants,6489,,148028,0.043836
+VIC,Casey,Gestational,,208,,
+VIC,Casey,Other,,34,,
+VIC,Casey,Type 1,,755,,
+VIC,Casey,Type 2,,5492,,
+VIC,Chisholm,Registrants,6785,,156903,0.043243
+VIC,Chisholm,Gestational,,231,,
+VIC,Chisholm,Other,,34,,
+VIC,Chisholm,Type 1,,654,,
+VIC,Chisholm,Type 2,,5866,,
+VIC,Corangamite,Registrants,7197,,158995,0.045265
+VIC,Corangamite,Gestational,,118,,
+VIC,Corangamite,Other,,57,,
+VIC,Corangamite,Type 1,,804,,
+VIC,Corangamite,Type 2,,6218,,
+VIC,Corio,Registrants,8558,,148534,0.057616
+VIC,Corio,Gestational,,122,,
+VIC,Corio,Other,,60,,
+VIC,Corio,Type 1,,840,,
+VIC,Corio,Type 2,,7536,,
+VIC,Deakin,Registrants,6408,,142924,0.044835
+VIC,Deakin,Gestational,,235,,
+VIC,Deakin,Other,,53,,
+VIC,Deakin,Type 1,,623,,
+VIC,Deakin,Type 2,,5497,,
+VIC,Dunkley,Registrants,7580,,156374,0.048473
+VIC,Dunkley,Gestational,,182,,
+VIC,Dunkley,Other,,50,,
+VIC,Dunkley,Type 1,,828,,
+VIC,Dunkley,Type 2,,6520,,
+VIC,Flinders,Registrants,8253,,158646,0.052021
+VIC,Flinders,Gestational,,154,,
+VIC,Flinders,Other,,50,,
+VIC,Flinders,Type 1,,792,,
+VIC,Flinders,Type 2,,7257,,
+VIC,Gellibrand,Registrants,8474,,167023,0.050735
+VIC,Gellibrand,Gestational,,289,,
+VIC,Gellibrand,Other,,45,,
+VIC,Gellibrand,Type 1,,766,,
+VIC,Gellibrand,Type 2,,7374,,
+VIC,Gippsland,Registrants,9652,,155428,0.062099
+VIC,Gippsland,Gestational,,149,,
+VIC,Gippsland,Other,,56,,
+VIC,Gippsland,Type 1,,790,,
+VIC,Gippsland,Type 2,,8657,,
+VIC,Goldstein,Registrants,5030,,151152,0.033277
+VIC,Goldstein,Gestational,,108,,
+VIC,Goldstein,Other,,53,,
+VIC,Goldstein,Type 1,,670,,
+VIC,Goldstein,Type 2,,4200,,
+VIC,Gorton,Registrants,12768,,213064,0.059925
+VIC,Gorton,Gestational,,404,,
+VIC,Gorton,Other,,67,,
+VIC,Gorton,Type 1,,836,,
+VIC,Gorton,Type 2,,11461,,
+VIC,Higgins,Registrants,4321,,149255,0.02895
+VIC,Higgins,Gestational,,129,,
+VIC,Higgins,Other,,40,,
+VIC,Higgins,Type 1,,614,,
+VIC,Higgins,Type 2,,3537,,
+VIC,Holt,Registrants,12274,,214224,0.057295
+VIC,Holt,Gestational,,531,,
+VIC,Holt,Other,,58,,
+VIC,Holt,Type 1,,990,,
+VIC,Holt,Type 2,,10696,,
+VIC,Hotham,Registrants,7735,,151032,0.051214
+VIC,Hotham,Gestational,,242,,
+VIC,Hotham,Other,,45,,
+VIC,Hotham,Type 1,,629,,
+VIC,Hotham,Type 2,,6819,,
+VIC,Indi,Registrants,8071,,144141,0.055993
+VIC,Indi,Gestational,,130,,
+VIC,Indi,Other,,41,,
+VIC,Indi,Type 1,,790,,
+VIC,Indi,Type 2,,7110,,
+VIC,Isaacs,Registrants,8821,,175430,0.050282
+VIC,Isaacs,Gestational,,304,,
+VIC,Isaacs,Other,,42,,
+VIC,Isaacs,Type 1,,768,,
+VIC,Isaacs,Type 2,,7707,,
+VIC,Jagajaga,Registrants,5363,,145906,0.036756
+VIC,Jagajaga,Gestational,,200,,
+VIC,Jagajaga,Other,,45,,
+VIC,Jagajaga,Type 1,,660,,
+VIC,Jagajaga,Type 2,,4458,,
+VIC,Kooyong,Registrants,4298,,145642,0.02951
+VIC,Kooyong,Gestational,,126,,
+VIC,Kooyong,Other,,37,,
+VIC,Kooyong,Type 1,,593,,
+VIC,Kooyong,Type 2,,3542,,
+VIC,La Trobe,Registrants,7016,,163891,0.042808
+VIC,La Trobe,Gestational,,256,,
+VIC,La Trobe,Other,,53,,
+VIC,La Trobe,Type 1,,789,,
+VIC,La Trobe,Type 2,,5918,,
+VIC,Lalor,Registrants,14200,,245143,0.057925
+VIC,Lalor,Gestational,,931,,
+VIC,Lalor,Other,,67,,
+VIC,Lalor,Type 1,,1180,,
+VIC,Lalor,Type 2,,12021,,
+VIC,Mallee,Registrants,8962,,143418,0.062488
+VIC,Mallee,Gestational,,203,,
+VIC,Mallee,Other,,43,,
+VIC,Mallee,Type 1,,762,,
+VIC,Mallee,Type 2,,7954,,
+VIC,Maribyrnong,Registrants,8478,,145257,0.058365
+VIC,Maribyrnong,Gestational,,211,,
+VIC,Maribyrnong,Other,,45,,
+VIC,Maribyrnong,Type 1,,653,,
+VIC,Maribyrnong,Type 2,,7570,,
+VIC,McEwen,Registrants,9585,,204749,0.046813
+VIC,McEwen,Gestational,,395,,
+VIC,McEwen,Other,,68,,
+VIC,McEwen,Type 1,,1035,,
+VIC,McEwen,Type 2,,8087,,
+VIC,McMillan,Registrants,9490,,155295,0.061109
+VIC,McMillan,Gestational,,236,,
+VIC,McMillan,Other,,46,,
+VIC,McMillan,Type 1,,835,,
+VIC,McMillan,Type 2,,8372,,
+VIC,Melbourne,Registrants,5879,,199847,0.029417
+VIC,Melbourne,Gestational,,260,,
+VIC,Melbourne,Other,,49,,
+VIC,Melbourne,Type 1,,833,,
+VIC,Melbourne,Type 2,,4737,,
+VIC,Melbourne Ports,Registrants,5012,,172004,0.029138
+VIC,Melbourne Ports,Gestational,,168,,
+VIC,Melbourne Ports,Other,,69,,
+VIC,Melbourne Ports,Type 1,,790,,
+VIC,Melbourne Ports,Type 2,,3985,,
+VIC,Menzies,Registrants,6458,,137302,0.047035
+VIC,Menzies,Gestational,,175,,
+VIC,Menzies,Other,,34,,
+VIC,Menzies,Type 1,,609,,
+VIC,Menzies,Type 2,,5640,,
+VIC,Murray,Registrants,8910,,146564,0.060792
+VIC,Murray,Gestational,,154,,
+VIC,Murray,Other,,44,,
+VIC,Murray,Type 1,,736,,
+VIC,Murray,Type 2,,7975,,
+VIC,Scullin,Registrants,9054,,148622,0.060919
+VIC,Scullin,Gestational,,340,,
+VIC,Scullin,Other,,41,,
+VIC,Scullin,Type 1,,675,,
+VIC,Scullin,Type 2,,7997,,
+VIC,Wannon,Registrants,8128,,142713,0.056953
+VIC,Wannon,Gestational,,126,,
+VIC,Wannon,Other,,51,,
+VIC,Wannon,Type 1,,814,,
+VIC,Wannon,Type 2,,7137,,
+VIC,Wills,Registrants,8840,,168794,0.052371
+VIC,Wills,Gestational,,273,,
+VIC,Wills,Other,,38,,
+VIC,Wills,Type 1,,797,,
+VIC,Wills,Type 2,,7733,,
+WA,Brand,Registrants,9983,,190970,0.052275
+WA,Brand,Gestational,,256,,
+WA,Brand,Other,,38,,
+WA,Brand,Type 1,,939,,
+WA,Brand,Type 2,,8750,,
+WA,Canning,Registrants,9841,,180829,0.054421
+WA,Canning,Gestational,,269,,
+WA,Canning,Other,,42,,
+WA,Canning,Type 1,,891,,
+WA,Canning,Type 2,,8638,,
+WA,Cowan,Registrants,7620,,174587,0.043645
+WA,Cowan,Gestational,,200,,
+WA,Cowan,Other,,44,,
+WA,Cowan,Type 1,,664,,
+WA,Cowan,Type 2,,6712,,
+WA,Curtin,Registrants,4254,,170097,0.025009
+WA,Curtin,Gestational,,102,,
+WA,Curtin,Other,,35,,
+WA,Curtin,Type 1,,650,,
+WA,Curtin,Type 2,,3468,,
+WA,Durack,Registrants,8861,,217115,0.040812
+WA,Durack,Gestational,,190,,
+WA,Durack,Other,,44,,
+WA,Durack,Type 1,,615,,
+WA,Durack,Type 2,,8011,,
+WA,Forrest,Registrants,7830,,170849,0.045829
+WA,Forrest,Gestational,,162,,
+WA,Forrest,Other,,24,,
+WA,Forrest,Type 1,,718,,
+WA,Forrest,Type 2,,6926,,
+WA,Fremantle,Registrants,7539,,177199,0.042545
+WA,Fremantle,Gestational,,269,,
+WA,Fremantle,Other,,43,,
+WA,Fremantle,Type 1,,743,,
+WA,Fremantle,Type 2,,6483,,
+WA,Hasluck,Registrants,9734,,183042,0.053179
+WA,Hasluck,Gestational,,269,,
+WA,Hasluck,Other,,42,,
+WA,Hasluck,Type 1,,812,,
+WA,Hasluck,Type 2,,8610,,
+WA,Moore,Registrants,6101,,177190,0.034431
+WA,Moore,Gestational,,129,,
+WA,Moore,Other,,39,,
+WA,Moore,Type 1,,726,,
+WA,Moore,Type 2,,5207,,
+WA,O'Connor,Registrants,8531,,184290,0.046291
+WA,O'Connor,Gestational,,115,,
+WA,O'Connor,Other,,31,,
+WA,O'Connor,Type 1,,730,,
+WA,O'Connor,Type 2,,7654,,
+WA,Pearce,Registrants,8870,,189003,0.04693
+WA,Pearce,Gestational,,241,,
+WA,Pearce,Other,,33,,
+WA,Pearce,Type 1,,934,,
+WA,Pearce,Type 2,,7662,,
+WA,Perth,Registrants,7746,,177893,0.043543
+WA,Perth,Gestational,,203,,
+WA,Perth,Other,,31,,
+WA,Perth,Type 1,,765,,
+WA,Perth,Type 2,,6747,,
+WA,Stirling,Registrants,7126,,173677,0.04103
+WA,Stirling,Gestational,,219,,
+WA,Stirling,Other,,40,,
+WA,Stirling,Type 1,,704,,
+WA,Stirling,Type 2,,6163,,
+WA,Swan,Registrants,7974,,195049,0.040882
+WA,Swan,Gestational,,276,,
+WA,Swan,Other,,36,,
+WA,Swan,Type 1,,742,,
+WA,Swan,Type 2,,6920,,
+WA,Tangney,Registrants,6983,,173940,0.040146
+WA,Tangney,Gestational,,204,,
+WA,Tangney,Other,,32,,
+WA,Tangney,Type 1,,620,,
+WA,Tangney,Type 2,,6127,,

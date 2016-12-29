@@ -1,0 +1,12 @@
+{% set groups = h.get_featured_groups(2) %}
+
+<div class="head-title">
+    <h3>Registrants and Accessing</h3>
+    <p>Grouping of datasets for registrant counts</p>
+</div>
+
+<div class="col-md-12 main-part">
+    {% for group in groups %}
+        {% snippet 'snippets/ndss_group_item.html', group=group, truncate=50, truncate_title=35 %}
+    {% endfor %}
+</div>

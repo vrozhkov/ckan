@@ -1,0 +1,50 @@
+FROM ckan_libs:latest
+
+
+COPY scripts/install.sh /home/user/tmp/install.sh
+COPY scripts/install_postgres.sh /home/user/tmp/install_postgres.sh
+COPY scripts/run_server.sh /home/user/run_server.sh
+COPY confs/development.ini /home/user/tmp/development.ini
+COPY confs/jetty8 /etc/default/jetty8
+
+
+RUN chmod +x /home/user/tmp/install.sh
+RUN chmod +x /home/user/tmp/install_postgres.sh
+RUN chmod +x /home/user/run_server.sh
+
+
+WORKDIR /home/user
+
+
+# This is not worked yet - do not modify and remove it.
+env POSTGRES_WRITE_USER="ckan_default"
+env POSTGRES_WRITE_PASSWORD="ckan_default"
+
+env POSTGRES_READ_USER="ckan_read_default"
+env POSTGRES_READ_PASSWORD="ckan_read_default"
+
+env POSTGRES_CKAN_DB="ckan_default"
+env POSTGRES_DS_DB="datastore_default"
+# end of env
+
+
+RUN mkdir -p /var/lib/ckan
+RUN chown user:user /var/lib/ckan -R
+
+
+RUN \
+	export POSTGRES_WRITE_USER="ckan_default" && \
+	export POSTGRES_WRITE_PASSWORD="ckan_default" && \
+	export POSTGRES_READ_USER="ckan_read_default" && \
+	export POSTGRES_READ_PASSWORD="ckan_read_default" && \
+	export POSTGRES_CKAN_DB="ckan_default" && \
+	export POSTGRES_DS_DB="datastore_default"
+
+
+EXPOSE 5000 8983
+
+
+CMD service postgresql start && \
+	sh /home/user/tmp/install_postgres.sh && \
+	sh /home/user/tmp/install.sh && \
+	sh /home/user/run_server.sh

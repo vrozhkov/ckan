@@ -1,0 +1,8 @@
+.env
+.idea
+container/ckan.tar.gz
+container/ckan_default.dump
+container/ckan_storage.tar.gz
+container/ckan_theme.zip
+container/datastore_default.dump
+container/1

@@ -1,0 +1,26 @@
+FROM ubuntu
+
+
+RUN apt-get update --fix-missing
+RUN apt-get update
+RUN apt-get upgrade -y
+
+
+RUN apt-get install -y \
+    build-essential \
+    gcc \
+    libpq-dev \
+    libffi-dev \
+    python \
+    python-dev \
+    python-pip \
+    git \
+    nano \
+    mc \
+    wget \
+    default-jre \
+    default-jdk \
+    htop
+
+
+ENV TERM=xterm
