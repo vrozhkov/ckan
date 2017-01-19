@@ -1,0 +1,8 @@
+{% set placeholder = _('E.g. Environment') %}
+
+<div class="container">
+    <form method="get" action="{% url_for controller='package', action='search' %}">
+        <input type="text" class="serch-box" name="q" value="" autocomplete="off" placeholder="{% block search_placeholder %}{{ placeholder }}{% endblock %}" />
+        <input type="submit" value="{{ _('Search') }}" class="serch-button" />
+    </form>
+</div>

@@ -1,0 +1,129 @@
+.silder-text-box {
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    width: 40%;
+}
+
+.silder-text-box h1 {
+    font-family: 'chronicle_display';
+    letter-spacing: 0px;
+    margin-bottom: 17px;
+    font-size: 70px;
+    color: #0c112a;
+    line-height: 61px;
+}
+
+.silder-text-box p {
+    font-size: 14px;
+    color: #0c112a;
+    line-height: 37px;
+    line-height: 25px;
+}
+
+.silder-text-box a {
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0px 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.silder-text-box a:hover {
+    background: #29b1fd;
+    color: #fff;
+}
+
+.silder .owl-controls.clickable {
+    display: none !important;
+}
+
+.silder-text-hometwo {
+    position: absolute;
+    top: 17%;
+    left: 20%;
+    right: 0px;
+}
+
+.home-two-silder {
+    position: static;
+}
+
+.sild-home-two {
+    right: 7%;
+    left: inherit;
+}
+
+.slider-button-left {
+    background: #0c112a;
+    color: #6d707f;
+}
+
+.slider-button-left:hover {
+    color: #6d707f;
+}
+
+.slider-button-right {
+    background: #29b1fd;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.slider-button-right:hover {
+    color: #fff;
+    background: #0c112a !important;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+    .silder-text-box {
+        top: 11px;
+    }
+
+    .silder-text-box h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 992px) {
+    .silder-text-box {
+        top: 11px;
+    }
+
+    .silder-text-box h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+    .silder-text-box {
+        top: 11px;
+        width: 50%;
+    }
+
+    .silder-text-box h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .silder-text-box a {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .silder-text-box h1 {
+
+        margin-bottom: 17px;
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .silder-text-box {
+        display: none;
+    }
+}

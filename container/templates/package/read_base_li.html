@@ -1,0 +1,98 @@
+{% extends "package/base_li.html" %}
+
+{% block subtitle %}{{ pkg.title or pkg.name }} - {{ super() }}{% endblock %}
+
+{% block head_extras -%}
+    {{ super() }}
+    {% set description = h.markdown_extract(pkg.notes, extract_length=200)|forceescape %}
+    <meta property="og:title" content="{{ h.dataset_display_name(pkg) }} - {{ g.site_title }}">
+    <meta property="og:description" content="{{ description|forceescape|trim }}">
+{% endblock -%}
+
+
+{% block aside_inner %}
+
+    {% block package_info %}
+        {% snippet 'package/snippets/info_li.html', pkg=pkg %}
+    {% endblock %}
+
+    {% block package_organization %}
+        {% if pkg.organization %}
+            {% set org = h.get_organization(pkg.organization.name) %}
+            {% snippet "snippets/organization_li.html", organization=org, has_context_title=true %}
+        {% endif %}
+    {% endblock %}
+
+    {% block package_social %}
+        {% snippet "snippets/social_li.html" %}
+    {% endblock %}
+
+    {% block package_license %}
+        {% snippet "snippets/license_li.html", pkg_dict=pkg %}
+    {% endblock %}
+
+{% endblock %}
+
+
+
+{% block article_inner %}
+    <div class="gdm-box">
+
+        <div class="gdm-tabs-box">
+            <ul class="nav nav-pills">
+                <li class="active">
+                    <a data-toggle="pill" href="#home" id="tab-menu">
+                        <img src="{{ h.url_for_static('/base/images/s-img.png')}}"/>
+                        <img src="{{ h.url_for_static('/base/images/gdm-tabs-icons-1.png')}}" class="hover-img"/>
+                        Dataset
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="pill" href="#menu1">
+                        <img src="{{ h.url_for_static('/base/images/gdm-tabs-icons-2.png')}}"/>
+                        <img src="{{ h.url_for_static('/base/images/hover-img.png')}}" class="hover-img"/>
+                        Activity Stream
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="pill" href="#menu2">
+                        <img src="{{ h.url_for_static('/base/images/gdm-tabs-icons-3.png')}}"/>
+                        <img src="{{ h.url_for_static('/base/images/hover-img-2.png')}}" class="hover-img"/>
+                        About
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content bl">
+                <div id="home" class="tab-pane fade in active">
+                    <div class="gdm-tab-content-box reg-tab-con">
+                        <h6>
+                            {{ c.pkg_dict.title or c.pkg_dict.name }}
+                        </h6>
+                        <p>
+                            {% if pkg.notes %}
+                                {{ h.render_markdown(pkg.notes) }}
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <div class="gdm-tab-content-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <div class="gdm-tab-content-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        
+        {% block data_resources %}{% endblock %}
+    </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{#
+Displays a single of dataset.
+
+package        - A package to display.
+item_class     - The class name to use on the list item.
+hide_resources - If true hides the resources (default: false).
+banner         - If true displays a popular banner (default: false).
+truncate       - The length to trucate the description to (default: 180)
+truncate_title - The length to truncate the title to (default: 80).
+
+Example:
+
+  {% snippet 'snippets/package_item_li.html', package=c.datasets[0] %}
+
+#}
+{% set truncate = truncate or 180 %}
+{% set truncate_title = truncate_title or 80 %}
+{% set title = package.title or package.name %}
+{% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
+
+{% block package_item %}
+  <li>
+    {% block content %}
+        {% set p_url = h.url_for(controller='package', action='read', id=package.name) %}
+        <p class="gdm-title-text"><a href="{{ p_url }}">{{ h.truncate(title, truncate_title) }}</a></p>
+        
+        {% if notes %}
+            <p class="gdm-sub-text">{{ notes|urlize }}</p>
+        {% else %}
+            <p class="gdm-sub-text">{{ _("This dataset has no description") }}</p>
+        {% endif %}
+        
+        {% if package.resources and not hide_resources %}
+            {% block resources_inner %}
+                {% for resource in h.dict_list_reduce(package.resources, 'format') %}
+                    <a href="{{ p_url }}" class="{{ 'datasets-' ~ resource.lower() ~ '-text' }}" data-format="{{ resource.lower() }}">{{ resource.lower() }}</a>
+                {% endfor %}
+            {% endblock %}
+        {% endif %}
+        
+    {% endblock %}
+  </li>
+{% endblock %}

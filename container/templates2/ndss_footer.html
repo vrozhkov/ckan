@@ -1,0 +1,64 @@
+<div class="clearfix"></div>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+          <div class="footer-about"> <img src="/ndss/images/footer-logo.png" class="img-responsive" /> </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+          <div class="footer-about">
+            <ul class="bottom-social">
+              {%- block social_buttons_bottom  %}
+                  {% include 'social_buttons.html' %}
+              {% endblock -%}
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+          <div class="footer-about">
+            <h3>About company</h3>
+            {% block footer_links_ckan %}
+                {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
+                <a href="{{ api_url }}">{{ _('CKAN API') }}</a>
+                <br />
+                <a href="http://www.ckan.org/">{{ _('CKAN Association') }}</a>
+                <br />
+                <a href="http://www.okfn.org/">Open Knowledge Foundation</a>
+                <br />
+                <a href="http://www.opendefinition.org/okd/"><img src="{{ h.url_for_static('/base/images/od_80x15_blue.png') }}"></a>
+            {% endblock %}
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+          <div class="footer-about">
+            <h3>Quick links</h3>
+            <ul class="footer-nav-menu">
+              {{ h.build_nav_main(
+                ('search', _('Datasets')),
+                ('organizations_index', _('Organizations')),
+                ('group_index', _('Groups')),
+                ('about', _('About'))
+              ) }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>Copyright © 2016 NDSS. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% block footer_debug %}
+  {% if g.debug %}
+    {% include 'snippets/debug.html' %}
+  {% endif %}
+{% endblock %}

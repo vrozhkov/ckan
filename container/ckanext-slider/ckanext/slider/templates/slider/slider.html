@@ -1,0 +1,10 @@
+{%- if slides -%}
+{%- resource 'slider/slider.css' -%}
+<div id="owl-demo" class="owl-carousel owl-theme">
+    {%- for slide in slides -%}
+        {%- snippet 'slider/snippets/slide.html', slide=slide -%}
+    {%- endfor -%}
+</div>
+{%- resource 'slider/owl.carousel.js' -%}
+{%- resource 'slider/slider.js' -%}
+{%- endif -%}

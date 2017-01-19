@@ -1,0 +1,9 @@
+<div class="pages-top-link">
+    <div class="container">
+        <div class="row">
+            <a href="{{ h.url('home') }}"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <span>/</span>
+            {% link_for _( breadcrumbTitle), controller=controller, action=action %}
+        </div>
+    </div>
+</div>

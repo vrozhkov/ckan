@@ -1,0 +1,25 @@
+{#
+Displays a sidebard module with information for given package
+
+pkg    - The package dict that owns the resources.
+
+Example:
+
+  {% snippet "package/snippets/info_li.html", pkg=pkg %}
+
+#}
+{% block package_info %}
+    {% if pkg %}
+        <div class="group-text-box">
+            {% block package_info_inner %}
+                {% block heading %}
+                    <h4>{{ pkg.title or pkg.name }}</h4>
+                {% endblock %}
+                {% block nums %}
+                    <p>{{ _('Followers') }}</p>
+                    <p>{{ h.SI_number_span(h.follow_count('dataset', pkg.id)) }}</dd>
+                {% endblock %}
+            {% endblock %}
+        </div>
+    {% endif %}
+{% endblock %}

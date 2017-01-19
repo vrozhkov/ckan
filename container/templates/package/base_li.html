@@ -1,0 +1,35 @@
+{% extends "page_li.html" %}
+
+{% set pkg = c.pkg_dict or pkg_dict %}
+
+{% block subtitle %}{{ _('Datasets') }}{% endblock %}
+
+{% block pages_top_link_inner %}
+<div class="pages-top-link">
+    <div class="container">
+        <div class="row">
+            <a href="{{ h.url('home') }}"><i class="fa fa-home" aria-hidden="true"></i></a>
+            {% if pkg %}
+                {% set dataset = pkg.title or pkg.name %}
+                {% if pkg.organization %}
+                    {% set organization = pkg.organization.title or pkg.organization.name %}
+                    <span>/</span>
+                    {% link_for _('Organizations'), controller='organization', action='index' %}
+                    <span>/</span>
+                    {% link_for organization|truncate(30), controller='organization', action='read', id=pkg.organization.name %}
+                {% else %}
+                    <span>/</span>
+                    {% link_for _('Datasets'), controller='package', action='search' %}
+                {% endif %}
+                <span>/</span>
+                {% link_for dataset|truncate(30), controller='package', action='read', id=pkg.name %}
+            {% else %}
+                <span>/</span>
+                {% link_for _('Datasets'), controller='package', action='search' %}
+                <span>/</span>
+                <a href="">{{ _('Create Dataset') }}</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

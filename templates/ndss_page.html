@@ -1,0 +1,29 @@
+{% extends 'ndss_base.html' %}
+
+
+{%- block page -%}
+
+<div id="warpper">
+  {%- block header %}
+    {% include "ndss_header.html" %}
+  {% endblock -%}
+</div>
+
+{%- block primary_content %}{% endblock -%}
+
+<!-- content -->
+{%- block content  %}{% endblock -%}
+
+  {%- block footer %}
+    {% include "ndss_footer.html" %}
+  {% endblock -%}
+{% endblock -%}
+
+{% block scripts %}
+    {% resource 'base/main' %}
+    {% resource 'base/ckan' %}
+    {% if g.tracking_enabled %}
+      {% resource 'base/tracking.js' %}
+    {% endif %}
+  {{ super() }}
+{% endblock %}

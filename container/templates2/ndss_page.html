@@ -1,0 +1,40 @@
+{% extends 'ndss_base.html' %}
+
+
+{%- block page -%}
+
+<div id="warpper">
+  {%- block header %}
+    {% include "ndss_header.html" %}
+  {% endblock -%}
+</div>
+
+{%- block primary_content %}{% endblock -%}
+
+<!-- content -->
+{% block flash %}
+    <div class="flash-messages">
+      {% block flash_inner %}
+        {% for message in h.flash.pop_messages() | list %}
+          <div class="alert fade in {{ message.category }}">
+            {{ h.literal(message) }}
+          </div>
+        {% endfor %}
+      {% endblock %}
+    </div>
+{% endblock %}
+{%- block content  %}{% endblock -%}
+
+  {%- block footer %}
+    {% include "ndss_footer.html" %}
+  {% endblock -%}
+{% endblock -%}
+
+{% block scripts %}
+    {% resource 'base/main' %}
+    {% resource 'base/ckan' %}
+    {% if g.tracking_enabled %}
+      {% resource 'base/tracking.js' %}
+    {% endif %}
+  {{ super() }}
+{% endblock %}

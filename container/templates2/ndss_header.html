@@ -1,0 +1,40 @@
+<header>
+<div class="header-top-bg">
+  <div class="header-left-box">
+    <ul>
+        {%- block social_buttons  %}
+            {% include 'social_buttons.html' %}
+        {% endblock -%}
+    </ul>
+  </div>
+  <div class="header-right-box">
+      <a href="#" class="live-chat"><i class="fa fa-comments" aria-hidden="true"></i> Live chat</a>
+      <a href="#" class="clien-text"><i class="fa fa-user" aria-hidden="true"></i> Client area</a>
+  </div>
+  <div class="clearfix"></div>
+  <div class="nav-menu">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="/"><img src="/ndss/images/logo.png" /></a> </div>
+        <div class="navbar-right">
+          <div class="collapse navbar-collapse nav-menu-nd" id="myNavbar">
+            <ul class="nav navbar-nav menu-home">
+              <li><a href="/">Home</a></li>
+              {{ h.build_nav_main(
+                ('search', _('Datasets')),
+                ('organizations_index', _('Organizations')),
+                ('group_index', _('Groups')),
+                ('about', _('About'))
+              ) }}
+            </ul>
+            <div class="sign-box"> <a href="#" class="sign-text"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign in</a> </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+</header>

@@ -1,54 +1,36 @@
-{% extends "page.html" %}
+{% extends "page_li.html" %}
 
 {% block subtitle %}{{ _('Login') }}{% endblock %}
 
-{% block breadcrumb_content %}
-  <li class="active">{{ h.nav_link(_('Login'), controller='user', action='login') }}</li>
-{% endblock %}
-
-{% block primary_content %}
-  <section class="module">
-    <div class="module-content">
-      <h1 class="page-heading">{% block page_heading %}{{ _('Login') }}{% endblock %}</h1>
-      {% block form %}
-        {% snippet "user/snippets/login_form.html", action=c.login_handler, error_summary=error_summary %}
-      {% endblock %}
+{% block pages_top_link_inner %}
+    <div class="pages-top-link">
+        <a href="{{ h.url('home') }}"><i class="fa fa-home" aria-hidden="true"></i></a> 
+        <span>/</span>
+        {{ h.nav_link(_('Login'), controller='user', action='login') }}
     </div>
-  </section>
 {% endblock %}
 
-{% block secondary_content %}
-  {% if h.check_access('user_create') %}
-  {% block help_register %}
-  <section class="module module-narrow module-shallow">
-    {% block help_register_inner %}
-      <h2 class="module-heading">{{ _('Need an Account?') }}</h2>
-      <div class="module-content">
-        <p>{% trans %}Then sign right up, it only takes a minute.{% endtrans %}</p>
-        <p class="action">
-        {% block help_register_button %}
-          <a class="btn" href="{{ h.url_for(controller='user', action='register') }}">{{ _('Create an Account') }}</a>
-        {% endblock %}
-        </p>
-      </div>
-    {% endblock %}
-  </section>
-  {% endblock %}
-  {% endif %}
+{% block aside_content %}{% endblock  %}
 
-  {% block help_forgotten %}
-  <section class="module module-narrow module-shallow">
-    {% block help_forgotten_inner %}
-    <h2 class="module-heading">{{ _('Forgotten your password?') }}</h2>
-    <div class="module-content">
-      <p>{% trans %}No problem, use our password recovery form to reset it.{% endtrans %}</p>
-      <p class="action">
-        {% block help_forgotten_button %}
-        <a class="btn" href="{{ h.url_for(controller='user', action='request_reset') }}">{{ _('Forgot your password?') }}</a>
-        {% endblock %}
-      </p>
+{% block article_content %}
+    <div class="login-bg-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 login-box">
+                    <h5>{{ _('Login') }}</h5>
+                    {% block form %}
+                        {% snippet "user/snippets/login_form_li.html", action=c.login_handler, error_summary=error_summary %}
+                    {% endblock %}
+                </div>
+                
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 forgotten-box">
+                    <h5>{{ _('Forgotten your password?') }}</h5>
+                    <p>{% trans %}No problem, use our password recovery form to reset it.{% endtrans %}</p>
+                    <a href="{{ h.url_for(controller='user', action='request_reset') }}" class="forgot-button">{{ _('Forgot your password?') }}</a>
+                </div>
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
     </div>
-    {% endblock %}
-  </section>
-  {% endblock %}
-{% endblock %}
+{% endblock  %}

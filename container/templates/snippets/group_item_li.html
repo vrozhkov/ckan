@@ -1,0 +1,40 @@
+{% set truncate=truncate or 0 %}
+{% set truncate_title = truncate_title or 80 %}
+
+
+<div class="head-title">
+    {% block group_item_header_title %}
+        <h3>{{ group.title or group.name }}</h3>
+    {% endblock %}
+    {% block group_item_header_description %}
+        {% if group.description %}
+            {% if truncate == 0 %}
+                <p>{{ h.markdown_extract(group.description)|urlize }}</p>
+            {% else %}
+                <p>{{ h.markdown_extract(group.description, truncate)|urlize }}</p>
+            {% endif %}
+        {% endif %}
+    {% endblock %}
+</div>
+<div class="col-md-12 main-part">
+    {% block group_item_content %}
+        {% if group.packages %}
+        	{% block package_list_inner %}
+                {% for package in group.packages %}
+                    {% set title = package.title or package.name %}
+                    {% set notes = h.markdown_extract(package.notes, 120) %}
+                    
+                    <div class="col-md-6 main-left">
+                        <h3>{{h.truncate(title, 80)}}</h3>
+                        {% if notes %}
+                            <p>{{ notes|urlize }}</p>
+                        {% else %}
+                            <p class="empty">{{ _("This dataset has no description") }}</p>
+                        {% endif %}
+                        {{ h.link_to('Learn more', h.url_for(controller='package', action='read', id=package.name)) }} 
+                    </div>
+                {% endfor %}
+    	    {% endblock %}
+        {% endif %}
+    {% endblock %}
+</div>

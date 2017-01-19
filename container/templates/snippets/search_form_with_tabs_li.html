@@ -1,0 +1,116 @@
+{% import 'macros/form.html' as form %}
+
+{% set placeholder = placeholder if placeholder else _('Search datasets...') %}
+{% set sorting = sorting if sorting else [(_('Name Ascending'), 'name asc'), (_('Name Descending'), 'name desc')] %}
+{% set search_class = search_class if search_class else 'search-giant' %}
+{% set no_bottom_border = no_bottom_border if no_bottom_border else false %}
+{% set form_id = form_id if form_id else false %}
+
+<div class="gdm-tabs-box">
+    <ul class="nav nav-pills">
+        <li class="active">
+            <a data-toggle="pill" href="#home" id="tab-menu">
+                <img src="{{ h.url_for_static('/base/images/s-img.png')}}"/>
+                <img src="{{ h.url_for_static('/base/images/gdm-tabs-icons-1.png')}}" class="hover-img"/>
+                Dataset
+            </a>
+        </li>
+        <li>
+            <a data-toggle="pill" href="#menu1">
+                <img src="{{ h.url_for_static('/base/images/gdm-tabs-icons-2.png')}}"/>
+                <img src="{{ h.url_for_static('/base/images/hover-img.png')}}" class="hover-img"/>
+                Activity Stream
+            </a>
+        </li>
+        <li>
+            <a data-toggle="pill" href="#menu2">
+                <img src="{{ h.url_for_static('/base/images/gdm-tabs-icons-3.png')}}"/>
+                <img src="{{ h.url_for_static('/base/images/hover-img-2.png')}}" class="hover-img"/>
+                About
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content bl">
+        <div id="home" class="tab-pane fade in active">
+            <div class="gdm-tab-content-box with-form">
+                
+                <form {% if form_id %}id="{{ form_id }}" {% endif %}class="search-form{% if no_bottom_border %} no-bottom-border{% endif %}" method="get" data-module="select-switch">
+
+                    {% block search_input %}
+                        <input type="text" class="serch-box" name="q" value="{{ query }}" autocomplete="off" placeholder="{{ placeholder }}">
+                            {% block search_input_button %}
+                                <input type="submit" value="Search" class="serch-button" />
+                            {% endblock %}
+                    {% endblock %}
+
+                    {#{% block search_search_fields %}
+                        {% if fields -%}
+                            <span>{{ form.hidden_from_list(fields=fields) }}</span>
+                        {%- endif %}
+                    {% endblock %}#}
+
+                    <div class="not-datasets-box groups-found-box">    
+                        {% block search_title %}
+                            {% if not no_title %}
+                                <h5>
+                                    {% snippet 'snippets/search_result_text_li.html', query=query, count=count, type=type %}
+                                </h5>
+                            {% endif %}
+                        {% endblock %}
+                      
+                      
+                        {% block search_sortby %}
+                            {% if sorting %}
+                                <span class="gp-select-box"> 
+                                    <strong>Order by:</strong>
+                                    <select name="sort">
+                                        {% for label, value in sorting %}
+                                            {% if label and value %}
+                                                <option value="{{ value }}"{% if sorting_selected == value %} selected="selected"{% endif %}>{{ label }}</option>
+                                            {% endif %}
+                                        {% endfor %}
+                                      </select>
+                                </span>
+                            {% endif %}
+                        {% endblock %}
+                    </div>
+                  {#{% block search_sortby %}
+                    {% if sorting %}
+                      <div class="form-select control-group control-order-by">
+                        <label for="field-order-by">{{ _('Order by') }}</label>
+                        <select id="field-order-by" name="sort">
+                          {% for label, value in sorting %}
+                            {% if label and value %}
+                              <option value="{{ value }}"{% if sorting_selected == value %} selected="selected"{% endif %}>{{ label }}</option>
+                            {% endif %}
+                          {% endfor %}
+                        </select>
+                        {% block search_sortby_button %}
+                        <button class="btn js-hide" type="submit">{{ _('Go') }}</button>
+                        {% endblock %}
+                      </div>
+                    {% endif %}
+                  {% endblock %}#}
+                  
+                </form>
+            </div>
+        </div>
+            
+        <div id="menu1" class="tab-pane fade">
+            <div class="gdm-tab-content-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <div class="gdm-tab-content-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

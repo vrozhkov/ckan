@@ -1,0 +1,16 @@
+.slider-admin {
+    width: 100% !important;
+}
+.slider-admin .show-read-more .more-text{
+    display: none;
+}
+.slider-admin .form-col {
+    width: 75%;
+    margin-left: 5%;
+}
+.slider-admin .form-control {
+    padding: 14px 14px 14px 7px;
+}
+.slider-admin .radio label:after {
+    content: "";
+}

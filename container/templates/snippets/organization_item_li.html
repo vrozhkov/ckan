@@ -1,0 +1,39 @@
+{% set url=h.url_for(controller='organization', action='read', id=organization.name) %}
+{% set truncate=truncate or 0 %}
+
+<div class="head-title Registrants-box">
+    {% block organization_item_header_title %}
+        <h3>{{ organization.title or organization.name }}</h3>
+    {% endblock %}
+    {% block organization_item_header_description %}
+        {% if organization.description %}
+            {% if truncate == 0 %}
+                <p>{{ h.markdown_extract(organization.description)|urlize }}</p>
+            {% else %}
+                <p>{{ h.markdown_extract(organization.description, truncate)|urlize }}</p>
+            {% endif %}
+        {% endif %}
+    {% endblock %}
+</div>
+<div class="col-md-12 main-part">
+    {% block organization_item_content %}
+        {% if organization.packages %}
+        	{% block package_list_inner %}
+                {% for package in organization.packages %}
+                    {% set title = package.title or package.name %}
+                    {% set notes = h.markdown_extract(package.notes, 120) %}
+                    
+                    <div class="col-md-6 main-left">
+                        <h3>{{h.truncate(title, 80)}}</h3>
+                        {% if notes %}
+                            <p>{{ notes|urlize }}</p>
+                        {% else %}
+                            <p class="empty">{{ _("This dataset has no description") }}</p>
+                        {% endif %}
+                        {{ h.link_to('Learn more', h.url_for(controller='package', action='read', id=package.name)) }} 
+                    </div>
+                {% endfor %}
+    	    {% endblock %}
+        {% endif %}
+    {% endblock %}
+</div>

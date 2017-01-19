@@ -1,0 +1,157 @@
+body {
+    background: #f5f5f5;    
+}
+
+.recline-data-explorer {
+    margin-top: 18px;
+}
+
+.data-view-container {
+    margin: 40px 0;
+}
+
+.navigation button {
+    color: #6d707f;
+    background: #0c112a;
+    border-color: #1e2549;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+}
+
+.navigation button:hover {
+    background-color: #fff;
+    color: #29b1fd;
+}
+
+.navigation button.active {
+    color: #fff;
+    background: #29b1fd;
+}
+
+.recline-results-info {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0c112a;
+    line-height: 40px;
+}
+
+div.recline-results-info {
+    margin-left: 90px;
+}
+
+div.recline-pager {
+    margin-left: 100px;
+}
+
+.recline-pager .pagination>li:first-child>a,
+.recline-pager .pagination input,
+.recline-pager .pagination .page-range,
+.recline-pager .pagination>li:last-child>a,
+.recline-pager .pagination a,
+.recline-pager .pagination .page-range a:hover,
+.recline-pager .pagination .page-range a:focus {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0c112a;
+}
+
+.recline-pager .pagination .page-range {
+    padding-right: 0;
+}
+
+.recline-pager .pagination a {
+    padding-left: 0;
+}
+
+.recline-query-editor {
+    border: none;
+}
+
+.recline-query-editor .input-group-addon {
+    display: none;
+}
+
+.recline-query-editor .search-query.form-control {
+    font-size: 12px;
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 20px;
+    border: 1px solid #c5c5c5;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 220px;
+}
+
+.recline-query-editor button[type="submit"] {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    background: #29b1fd;
+    border-radius: 5px;
+    padding: 0px 30px;
+    outline: none;
+    border: none;
+    margin-left: 18px;
+}
+
+.recline-query-editor button[type="submit"]:hover {
+    background: #0c112a;
+    color: #fff;
+}
+
+.recline-data-explorer .header .menu-right button {
+    font-size: 12px;
+    color: #6d707f;
+    text-align: center;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    background: #0c112a;
+    border-radius: 5px;
+    padding: 0px 30px;
+    outline: none;
+    border: none;
+    margin-right: 5px;
+}
+
+.recline-data-explorer .header .menu-right button:hover {
+    background: #29b1fd;
+    color: #fff;
+}
+
+
+
+
+
+.recline-slickgrid .slick-header-column.ui-state-default {
+    border: 1px solid #cdcdcd;
+    background: #fff;
+    box-shadow: inset 7px -3px 11px -1px #e6e6e6;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 5px 0px 5px 10px;
+    height: 31px;
+    line-height: normal;
+}
+
+.recline-slickgrid .slick-viewport .slick-row .slick-cell {
+    border: 1px solid #cdcdcd;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    text-transform: capitalize;
+    padding: 3px 10px;
+    background: #fff;
+}
+
+.recline-slickgrid .slick-viewport .slick-row.odd .slick-cell {
+    background: #fafafa;
+}

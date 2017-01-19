@@ -1,24 +1,32 @@
-{% extends "page.html" %}
+{% extends "page_li.html" %}
 
-{% block subtitle %}{{ _('About') }}{% endblock %}
+{% block subtitle %}{{ _("About") }}{% endblock %}
 
-{% block breadcrumb_content %}
-  <li class="active">{% link_for _('About'), controller='home', action='about' %}</li>
+{% block pages_top_link_alt %}
+    {% snippet 'snippets/breadcrumbs_li.html', breadcrumbTitle='About', controller='home', action='about' %}
 {% endblock %}
 
-{% block primary %}
-  <article class="module">
-    <div class="module-content">
-      {% block about %}
-        {% if g.site_about %}
-          {{ h.render_markdown(g.site_about) }}
-        {% else %}
-          <h1 class="page-heading">{{ _('About') }}</h1>
-          {% snippet 'home/snippets/about_text.html' %}
-        {% endif %}
-      {% endblock %}
+{% block group_con_bx %}
+    <div class="welcome-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-6 col-md-6 col-xs-12 welcome-text-box">
+                    <h2>Welcome to NDSS | Your Data Portal</h2>
+                    {% block about %}
+                        {% if g.site_about %}
+                            {{ h.render_markdown(g.site_about) }}
+                        {% else %}
+                            {% snippet 'home/snippets/about_text.html' %}
+                        {% endif %}
+                    {% endblock %}
+                    <a href="#" class="buttons-one">Learn more</a>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-md-6 col-xs-12 welcome-img-box">
+                    <img src="{{ h.url_for_static('/base/images/welcome-img.png')}}" class="img-responsive"/>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
     </div>
-  </article>
 {% endblock %}
 
-{% block secondary %}{% endblock %}

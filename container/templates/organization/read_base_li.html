@@ -1,0 +1,23 @@
+{% extends "page_li.html" %}
+
+{% block subtitle %}{{ c.group_dict.display_name }} - {{ _('Organizations') }}{% endblock %}
+
+{% block pages_top_link_inner %}
+<div class="pages-top-link">
+    <div class="container">
+        <div class="row">
+            <a href="{{ h.url('home') }}"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <span>/</span>
+            {% link_for _('Organizations'), controller='organization', action='index' %}
+            <span>/</span>
+            {% link_for c.group_dict.display_name|truncate(35), controller='organization', action='read', id=c.group_dict.name %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block aside_inner %}
+    {% snippet 'snippets/organization_alt_li.html', organization=c.group_dict, show_nums=true %}
+    {% block organization_facets %}{% endblock %}
+{% endblock %}

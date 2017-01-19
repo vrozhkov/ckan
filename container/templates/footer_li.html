@@ -1,0 +1,71 @@
+<div id="footer">
+  <div class="container">
+    {% block footer_content %}
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+            <div class="footer-about"> <img src="{{ h.url_for_static('/base/images/footer-logo.png')}}" class="img-responsive" /> </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+            <div class="footer-about">
+              <ul class="bottom-social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+            <div class="footer-about">
+                <h3>About company</h3>
+                {% block footer_nav %}
+                    <ul class="footer-nav-menu">
+                       {% block footer_links %}
+                            <li><a href="{{ h.url_for(controller='home', action='about') }}">{{ _('About {0}').format(g.site_title) }}</a></li>
+                       {% endblock %}
+                       {% block footer_links_ckan -%}
+                            {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
+                            {# <li class="hidden"><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li> #}
+                            {# <li class="hidden"><a href="http://www.okfn.org/">{{ _('Open Knowledge Foundation') }}</a></li> #}
+                       {%- endblock %}
+                   </ul>
+                {% endblock %}
+            </div>
+            <br />
+            {% block footer_lang %}
+              {% snippet "snippets/language_selector.html" %}
+            {% endblock %}
+          </div>
+          <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+            <div class="footer-about">
+              <h3>Quick links</h3>
+              <ul class="footer-nav-menu">
+                  {% block foter_site_navigation %}
+                    {{ h.build_nav_main(
+                      ('search', _('Datasets')),
+                      ('organizations_index', _('Organizations')),
+                      ('group_index', _('Groups')),
+                      ('about', _('About'))
+                    ) }}
+                  {% endblock %}
+              </ul>
+            </div>
+          </div>
+        </div>
+    {% endblock %}
+  </div>
+</div>
+<div id="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <p>Copyright © 2016 NDSS. All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% block footer_debug %}
+  {% if g.debug %}
+    {% include 'snippets/debug.html' %}
+  {% endif %}
+{% endblock %}

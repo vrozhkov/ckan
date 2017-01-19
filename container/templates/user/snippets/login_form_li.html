@@ -1,0 +1,27 @@
+{# 
+Renders the login form.
+
+action        - The url that the form should be submitted to.
+error_summary - A tuple/list of form errors.
+
+Example:
+
+  {% snippet "user/snippets/login_form_li.html", action=c.login_handler, error_summary=error_summary %}
+
+#}
+{% import 'macros/form.html' as form %}
+
+{% set username_error = true if error_summary %}
+{% set password_error = true if error_summary %}
+
+<form action="{{ action }}" method="post">
+  {{ form.errors(errors=error_summary) }}
+  
+  <label>Username</label>
+  <input type="text" name="login" class="login-text-box"/>
+  <label>Password</label>
+  <input type="password" name="password" class="login-text-box"/>
+  <button type="submit" class="button-submit">
+      <i class="fa fa-unlock-alt" aria-hidden="true"></i> {{ _('Login') }}
+  </button>
+</form>

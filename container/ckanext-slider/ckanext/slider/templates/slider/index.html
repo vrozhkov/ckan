@@ -1,0 +1,51 @@
+{% extends "ndss_page.html" %}
+{%- block subtitle %}{{ _("Slider") }}{% endblock -%}
+
+{%- block maintag %}{% endblock -%}
+{%- block toolbar %}{% endblock -%}
+
+{%- block content -%}
+    {% resource 'slider/slider-admin.css' %}
+    {% resource 'slider/slider-admin.js' %}
+    <div class="contain-center">
+        <div class="container slider-admin">
+            <div class="row">
+                <div class="col-md-12 table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>image</th>
+                                <th>H1</th>
+                                <th>P</th>
+                                <th>Text position</th>
+                                <th>Button left link</th>
+                                <th>Button left name</th>
+                                <th>Button left enabled?</th>
+                                <th>Button right link</th>
+                                <th>Button right name</th>
+                                <th>Button right enabled?</th>
+                                <th>Ordering</th>
+                                <th>Is Visible?</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {%- for slide in slides -%}
+                                <tr>
+                                    {% snippet 'slider/snippets/slide_tr.html', slide=slide %}
+                                </tr>
+                            {%- else -%}
+                                <tr>
+                                    <td colspan="13">Nothing found!</td>
+                                </tr>
+                            {%- endfor -%}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-12 form-col">
+                    {%- snippet 'slider/snippets/form.html', slide=slide, errors=errors -%}
+                </div>
+            </div>
+        </div>
+    </div>
+{%- endblock -%}

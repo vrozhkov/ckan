@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# service jetty8 restart
 
-cd /home/user/ckan/lib/default/src/ckan
-/home/user/ckan/lib/default/bin/paster serve /home/user/ckan/etc/default/development.ini > output.log 2>&1
+cd /usr/lib/ckan/default/src/ckan
+/usr/lib/ckan/default/bin/paster serve /etc/ckan/default/development.ini > output.log 2>&1

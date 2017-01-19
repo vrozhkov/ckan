@@ -1,0 +1,84 @@
+{% extends "base_li.html" %}
+
+{%- block page -%}
+
+  {% block skip %}
+    <div class="hide"><a href="#content">{{ _('Skip to content') }}</a></div>
+  {% endblock %}
+
+  {#
+  Override the header on a page by page basis by extending this block. If
+  making sitewide header changes it is preferable to override the header.html
+  file.
+  #}
+  {%- block header %}
+    {% include "header_li.html" %}
+  {% endblock -%}
+
+  {# The content block allows you to replace the content of the page if needed #}
+  {%- block content %}
+  
+    {% block search_home_box %}
+    <div class="Search-box Search-hometwo-box">
+        <div class="container">
+            <form method="get" action="{% url_for controller='package', action='search' %}">
+                <input type="text" class="serch-box" name="q" value="" autocomplete="off" placeholder="{% block search_placeholder %}{{ _('E.g. Environment') }}{% endblock %}"/>
+                <input type="submit" value="{{ _('Search') }}" class="serch-button serch-button-home"/>
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+    
+    {% block pages_top_link_alt %}{% endblock %}
+    
+    {% block group_con_bx %}
+    <div class="group-con-bx">
+        <div class="container">
+            <div class="row">
+                <div class="content-box">
+                    {% block content_box_inner %}
+                    
+                        {% block pages_top_link_inner %}{% endblock %}
+                        
+                        {% block aside_content %}
+                            <aside class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                {% block aside_inner %}{% endblock  %}
+                            </aside>
+                        {% endblock  %}
+                        
+                        {% block article_content %}
+                        <article class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            {% block article_inner %}{% endblock %}
+                        </article>
+                        {% endblock %}
+                        
+                    {% endblock %}
+                    
+                    {% block clearfix_page_li %}<div class="clearfix"></div>{% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    
+  {% endblock -%}
+
+  {#
+  Override the footer on a page by page basis by extending this block. If
+  making sitewide header changes it is preferable to override the footer.html-u
+  file.
+  #}
+  {%- block footer %}
+    {% include "footer_li.html" %}
+  {% endblock -%}
+{%- endblock -%}
+
+{% block scripts %}
+  
+    {% resource 'base/main' %}
+    {% resource 'base/ckan' %}
+    {% if g.tracking_enabled %}
+      {% resource 'base/tracking.js' %}
+    {% endif %}
+    {{ super() }}
+{% endblock %}

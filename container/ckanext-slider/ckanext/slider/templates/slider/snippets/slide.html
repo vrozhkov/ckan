@@ -1,0 +1,13 @@
+<div class="item">
+    <img src="/{{ h.get_slider_static_url() }}/{{ slide.image }}" class="img-responsive" alt="{{ slide.h1|safe }}"/>
+    <div class="silder-text-box{% if not slide.is_text_left %} sild-home-two{% endif %}">
+        <h1>{{ slide.h1|safe }}</h1>
+        <p>{{ slide.p|safe }}</p>
+        {%- if slide.button_left_enabled -%}
+            <a href="{{ slide.button_left_link|safe }}" class="slider-button-left">{{ slide.button_left_name|safe }}</a>
+        {%- endif -%}
+        {%- if slide.button_right_enabled -%}
+            <a href="{{ slide.button_right_link|safe }}" class="slider-button-right">{{ slide.button_right_name|safe }}</a>
+        {%- endif  -%}
+    </div>
+</div>

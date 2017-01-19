@@ -1,0 +1,113 @@
+{%- set action = "edit" if slide and slide.id_slider else "add" -%}
+<filedset>
+<legend>{{ action|title }} slide</legend>
+<form class="form form-horizontal" role="form" action="{{ h.get_slider_url(action, slide.id_slider) }}" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label class="control-label" for="inp-image-file" class="control-label">Image</label>
+        <div class="col-sm-10">
+            {% if action == 'edit' -%}
+                <img id="inp-image" src="/{{ h.get_slider_static_url() }}/{{ slide.image }}" style="height: 100px" />
+            {% else %}
+                <img id="inp-image" onclick="$('#inp-image-file').click();" alt="image preview" style="height: 100px; display: none" />
+            {% endif -%}
+            <input type="file" required id="inp-image-file" name="image" accept="image/*" onchange="readURL(this);" />
+            {% if errors.image %}{% snippet 'slider/snippets/form_error.html', errors=errors.image %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Text position</label>
+        <div class="col-sm-10">
+            <div class="radio">
+                <label>
+                    <input type="radio" id="inp-position-left" name="position" value="left" {% if not slide or (slide and (slide.position == 'left' or (slide.id_slider and slide.is_text_left))) %}checked="checked"{% endif %} />
+                    Left
+                </label>
+                <label>
+                    <input type="radio" id="inp-position-right" name="position" value="right" {% if slide and (slide.position == 'right' or (slide.id_slider and not slide.is_text_left)) %}checked="checked"{% endif %} />
+                    Right
+                </label>
+            </div>
+            {% if errors.position %}{% snippet 'slider/snippets/form_error.html', errors=errors.position %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="txt-h1">H1 (Title)</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="txt-h1" placeholder="Title" name="h1">{% if slide %}{% if slide.h1 %}{{ slide.h1 }}{% endif %}{% else %}Welcome to the <br/>NDSS Data Portal{% endif %}</textarea>
+            {% if errors.h1 %}{% snippet 'slider/snippets/form_error.html', errors=errors.h1 %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inp-p">P (Text)</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="inp-p" placeholder="Text" name="p">{% if slide %}{% if slide.p %}{{ slide.p }}{% endif %}{% else %}Mauris est tellus, mollis et facilisis et, rutrum ut erat. Suspendisse efficitur risus non libero hendrerit blandit. Donec tincidunt odio id egestas lobortis.{% endif %}</textarea>
+            {% if errors.p %}{% snippet 'slider/snippets/form_error.html', errors=errors.p %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inp-btn-l-l">Button left link</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" placeholder="Button left link" id="inp-btn-l-l" name="button_left_link" value="{% if slide %}{% if slide.button_left_link %}{{ slide.button_left_link }}{% endif %}{% else %}/about{% endif %}" />
+            {% if errors.button_left_link %}{% snippet 'slider/snippets/form_error.html', errors=errors.button_left_link %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inp-btn-l-n">Button left name</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" id="inp-btn-l-n" placeholder="Button left name" name="button_left_name" value="{% if slide %}{% if slide.button_left_name %}{{ slide.button_left_name }}{% endif %}{% else %}About NDSS{% endif %}" />
+            {% if errors.button_left_name %}{% snippet 'slider/snippets/form_error.html', errors=errors.button_left_name %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inp-btn-l-e">Button left enabled?</label>
+        <div class="col-sm-10">
+            <input type="checkbox" id="inp-btn-l-e" name="button_left_enabled" {% if slide %}{% if slide.button_left_enabled %}checked="checked"{% endif %}{% else %}checked="checked"{% endif %} />
+            {% if errors.button_left_enabled %}{% snippet 'slider/snippets/form_error.html', errors=errors.button_left_enabled %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inp-btn-r-l">Button right link</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" id="inp-btn-r-l" placeholder="Button right link" name="button_right_link" value="{% if slide %}{% if slide.button_right_link %}{{ slide.button_right_link }}{% endif %}{% else %}/dataset{% endif %}" />
+            {% if errors.button_right_link %}{% snippet 'slider/snippets/form_error.html', errors=errors.button_right_link %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inp-btn-r-n">Button right name</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" id="inp-btn-r-n" placeholder="Button right name" name="button_right_name" value="{% if slide %}{% if slide.button_right_name %}{{ slide.button_right_name }}{% endif %}{% else %}Datasets{% endif %}" />
+            {% if errors.button_right_name %}{% snippet 'slider/snippets/form_error.html', errors=errors.button_right_name %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inp-btn-r-e">Button right enabled?</label>
+        <div class="col-sm-10">
+            <input type="checkbox" id="inp-btn-r-e" name="button_right_enabled" {% if slide %}{% if slide.button_right_enabled %}checked="checked"{% endif %}{% else %}checked="checked"{% endif %} />
+            {% if errors.button_right_enabled %}{% snippet 'slider/snippets/form_error.html', errors=errors.button_right_enabled %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inp-ord">Ordering</label>
+        <div class="col-sm-10">
+            <input required class="form-control" type="text" id="inp-ord" name="ordering" placeholder="Ordering" value="{% if slide %}{{ slide.ordering }}{% else %}1{% endif %}" />
+            {% if errors.ordering %}{% snippet 'slider/snippets/form_error.html', errors=errors.ordering %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inp-is-active">Is Active?</label>
+        <div class="col-sm-10">
+            <input type="checkbox" id="inp-is-active" name="is_active" {% if slide %}{% if slide.is_active %}checked="checked"{% endif %}{% else %}checked="checked"{% endif %} />
+            {% if errors.is_active %}{% snippet 'slider/snippets/form_error.html', errors=errors.is_active %}{% endif -%}
+        </div>
+    </div>
+    <div class="form-group">
+        {% if slide and slide.id_slider -%}
+        <input type="hidden" name="id_slider", value="{{ slide.id_slider }}" />
+        {%- endif %}
+        <div class="col-sm-offset-2 col-sm-10">
+            <input class="btn btn-default" type="submit" />
+            {%- if errors.global %}{% snippet 'slider/snippets/form_error.html', errors=errors.global %}{% endif %}
+        </div>
+    </div>
+</form>
+</filedset>

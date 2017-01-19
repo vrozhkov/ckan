@@ -1,0 +1,57 @@
+.group-icons-box-media {
+    width: 140px;
+}
+
+.tab-content.bl {
+    display: block;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) td {
+    background: #dadada;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 20px;
+    color: #333333;
+    white-space: nowrap;
+    background: transparent;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    text-align: left;
+}
+
+.dropdown-menu > li > a:hover {
+    color: #fff;
+}
+
+div.modal {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 1050;
+    width: 560px;
+    margin-left: -280px;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,0.3);
+    bottom: auto;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: none;
+}
+
+.full-rigi-bg-box {
+    float: none;
+}

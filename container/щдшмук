@@ -1,0 +1,61 @@
+Update icon in tab
+ - Иконки для сайта (favicon в дизайне нет и Вы не предоставили)
+
+
+Hyperlink social icons in footer and header to their social profiles (nothing happens when you click on them)
+ - дизайном это не предусмотренно (ссылок и Вы не предоставили)
+
+Replace dummy text in the banner with actual text
+ - дизайном это не предусмотренно (текст и Вы не предоставили)
+
+In the footer:  Change "About CKAN" to "About NDSS Data Portal"
+ - дизайном это не предусмотренно (изменить не составит труда)
+
+Update text in the "About" section
+ - это редактируется в админке (дизайном не предоставленно, текст и Вы не предоставили)
+
+In the dataset section: the excel option is missing, you can only download it as a csv not as a xlsx
+ - дизайном это не предусмотренно (изменить не составит труда, я вручную добавил в дизайн-стиль для xlsx)
+
+The whole data/ dataset is incorrect / incomplete (remove the test dataset and add real datasets)
+ - я вбил данные вручную, чтобы Вам показать результат нашей работу (но мы не должны вбивать все данные в точности как на исходном сайте, у нас другая задача!)
+
+Spelling mistake: needs to be "Organisation" instead of "Organization"
+ - За переводы отвечает CMS CKAN - не мы.
+
+Wrong dataset for the groups (still a test group instead of the correct one)
+ - я вбил данные вручную, чтобы Вам показать результат нашей работу (но мы не должны вбивать все данные в точности как на исходном сайте, у нас другая задача!)
+
+Add different language options
+ - дизайном это не предусмотренно (изменить не составит труда)
+
+Wrong data and picture on the "Organzations" page, doesn't show the organisation but instead a dataset
+ - я вбил данные вручную, чтобы Вам показать результат нашей работу (но мы не должны вбивать все данные в точности как на исходном сайте, у нас другая задача!)
+
+add log in button
+ - дизайном это не предусмотренно (изменить не составит труда)
+
+The groups and organisations (in their sections) are not clickable
+ - дизайном это не предусмотренно (изменить не составит труда)
+
+Registrants by age dataset:  description text is incomplete, file is unnamed, random lines in the table
+ - я вбил данные вручную, чтобы Вам показать результат нашей работу (но мы не должны вбивать все данные в точности как на исходном сайте, у нас другая задача!)
+
+Registrant by Age Activity stream is incorrect
+ - я вбил данные вручную, чтобы Вам показать результат нашей работу (но мы не должны вбивать все данные в точности как на исходном сайте, у нас другая задача!)
+
+Registrants by Age: Group tab is missing
+ - я вбил данные вручную, чтобы Вам показать результат нашей работу (но мы не должны вбивать все данные в точности как на исходном сайте, у нас другая задача!)
+
+the NDSS logo is blurry (and maybe too small), you can't read the text underneath it: both in the footer and in the header
+ - идентично дизайну
+
+Registrants and Accessing box is doubled (the right one needs to have the Diabetis Astralia content) and "registrants by age" is doubled in the box, although the second option needs to be "Registrant full dataset"
+ - идентично дизайну
+ - я вбил данные вручную, чтобы Вам показать результат нашей работу (но мы не должны вбивать все данные в точности как на исходном сайте, у нас другая задача!)
+
+Replace CKAN with NDSS Data Portal everythwere (about, tab etc.)
+ - всё идентично дизайну
+
+Only one / the main banner on the website, add the three others!
+ - всё идентично дизайну

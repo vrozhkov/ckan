@@ -5630,6 +5630,11 @@ a.tag:hover {
   font-weight: bold;
   color: #000000;
 }
+.module .pagination {
+  height: 34px;
+  margin-bottom: 0;
+  border-top: 1px solid #dddddd;
+}
 .module-content .pagination {
   margin-left: -25px;
   margin-right: -25px;
@@ -5645,8 +5650,8 @@ a.tag:hover {
   border: 0;
 }
 .module .pagination li a {
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
+  border-top: none;
+  border-bottom: none;
   padding-top: 7px;
   padding-bottom: 7px;
 }
@@ -5655,6 +5660,16 @@ a.tag:hover {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+.module .pagination li:first-child a {
+  border-left-width: 0;
+}
+.module .pagination li:last-child a {
+  border-right-width: 0;
+}
+.module .pagination li.active a {
+  border-left-width: 1px;
+  border-right-width: 1px;
 }
 .module-content-shallow {
   padding: 0;
@@ -5763,7 +5778,7 @@ a.tag:hover {
   margin-top: 0;
 }
 .ckanext-datapreview > iframe {
-  min-height: 650px;
+  min-height: 400px;
 }
 .ckanext-datapreview > img {
   max-height: 500px;
@@ -6876,7 +6891,7 @@ textarea {
   box-shadow: none;
 }
 .js .image-upload #field-image-url {
-  padding-right: 90px;
+  padding-right: 29px;
 }
 .js .image-upload #field-image-upload {
   cursor: pointer;
@@ -6907,7 +6922,7 @@ textarea {
   margin-right: 0;
   top: 4px;
   right: 5px;
-  padding: 0 12px;
+  padding: 0 4px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
@@ -7908,27 +7923,6 @@ h4 small {
   height: 35px;
   background-position: -320px -62px;
 }
-.format-label[data-format=jpg],
-.format-label[data-format*=jpg],
-.format-label[data-format=jpeg],
-.format-label[data-format*=jpeg],
-.format-label[data-format=png],
-.format-label[data-format*=png],
-.format-label[data-format=bmp],
-.format-label[data-format*=bmp],
-.format-label[data-format=tiff],
-.format-label[data-format*=tiff],
-.format-label[data-format=gif],
-.format-label[data-format*=gif],
-.format-label[data-format=image],
-.format-label[data-format*=image],
-.format-label[data-format=img],
-.format-label[data-format*=img] {
-  width: 32px;
-  height: 35px;
-  background-position: -352px -62px;
-}
-
 [class^="icon-"],
 [class*=" icon-"] {
   display: inline-block;

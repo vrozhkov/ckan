@@ -1,0 +1,87 @@
+<div class="silder">
+  <div id="owl-demo" class="owl-carousel owl-theme">
+    <div class="item"><img src="{{ h.url_for_static('/base/images/Banner1.jpg')}}" class="img-responsive" alt="The Last of us">
+      <div class="silder-text-box">
+        <h1>Welcome to the <br /> NDSS InfoNet <br />
+          Your information network</h1>
+        <p>Mauris est tellus, mollis et facilisis et, rutrum ut erat. Suspendisse efficitur risus non libero hendrerit blandit. Donec tincidunt odio id egestas lobortis.</p>
+        <a href="{{ h.url_for(controller='home', action='about') }}" class="about-nddss">About NDSS</a> <a href="{{ h.url('dataset') }}" class="Datasets-button">Datasets</a> </div>
+    </div>
+    <div class="item"><img src="{{ h.url_for_static('/base/images/Banner2.jpg')}}" class="img-responsive" alt="The Last of us">
+      <div class="silder-text-box sild-home-two">
+        <h1>Welcome to the <br /> NDSS InfoNet <br />
+          Your information network</h1>
+        <p>Mauris est tellus, mollis et facilisis et, rutrum ut erat. Suspendisse efficitur risus non libero hendrerit blandit. Donec tincidunt odio id egestas lobortis.</p>
+        <a href="{{ h.url_for(controller='home', action='about') }}" class="about-nddss">About NDSS</a> <a href="{{ h.url('dataset') }}" class="Datasets-button">Datasets</a> </div>
+    </div>
+    <div class="item"><img src="{{ h.url_for_static('/base/images/Banner3.jpg')}}" class="img-responsive" alt="The Last of us">
+      <div class="silder-text-box">
+        <h1>Welcome to the <br /> NDSS InfoNet <br />
+          Your information network</h1>
+        <p>Mauris est tellus, mollis et facilisis et, rutrum ut erat. Suspendisse efficitur risus non libero hendrerit blandit. Donec tincidunt odio id egestas lobortis.</p>
+        <a href="{{ h.url_for(controller='home', action='about') }}" class="about-nddss">About NDSS</a> <a href="{{ h.url('dataset') }}" class="Datasets-button">Datasets</a> </div>
+    </div>
+    <div class="item"><img src="{{ h.url_for_static('/base/images/Banner4.jpg')}}" class="img-responsive" alt="The Last of us">
+      <div class="silder-text-box">
+        <h1>Welcome to the <br /> NDSS InfoNet <br />
+          Your information network</h1>
+        <p>Mauris est tellus, mollis et facilisis et, rutrum ut erat. Suspendisse efficitur risus non libero hendrerit blandit. Donec tincidunt odio id egestas lobortis.</p>
+        <a href="{{ h.url_for(controller='home', action='about') }}" class="about-nddss">About NDSS</a> <a href="{{ h.url('dataset') }}" class="Datasets-button">Datasets</a> </div>
+    </div>
+    <div class="item"><img src="{{ h.url_for_static('/base/images/Banner5.jpg')}}" class="img-responsive" alt="The Last of us">
+      <div class="silder-text-box">
+        <h1>Welcome to the <br /> NDSS InfoNet </h1>
+          <p>Your information network</p>
+        <!-- <h1>Welcome to the <br />
+          NDSS Data Portal</h1> -->
+        <p>Mauris est tellus, mollis et facilisis et, rutrum ut erat. Suspendisse efficitur risus non libero hendrerit blandit. Donec tincidunt odio id egestas lobortis.</p>
+        <a href="{{ h.url_for(controller='home', action='about') }}" class="about-nddss">About NDSS</a> <a href="{{ h.url('dataset') }}" class="Datasets-button">Datasets</a> </div>
+    </div>
+  </div>
+</div>
+
+<div class="Search-box">
+    {% block search %}
+        {% snippet 'home/snippets/search_home_li.html' %}
+    {% endblock %}
+</div>
+
+<div class="welcome-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 welcome-text-box">
+        <h2>Welcome to the NDSS InfoNet <br /> Your information network</h2>
+        {% block about %}
+            {% if g.site_about %}
+                {{ h.render_markdown(g.site_about) }}
+            {% else %}
+                {% snippet 'home/snippets/about_text.html' %}
+            {% endif %}
+        {% endblock %}
+        <a href="#" class="buttons-one">Learn more</a> </div>
+      <div class="col-sm-5 col-lg-5 col-md-5 col-xs-12 welcome-img-box"> <img src="{{ h.url_for_static('/base/images/welcome-img.png')}}" class="img-responsive about-home-img" /></div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+<!-- content -->
+<div class="contain-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            {% block featured_group %}
+                {% snippet 'home/snippets/featured_group_li.html' %}
+            {% endblock %}
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home-sect-mobile">
+            {% block featured_organization %}
+                {% snippet 'home/snippets/featured_organization_li.html' %}
+            {% endblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>

@@ -1,0 +1,44 @@
+{#
+Embeds a organization within the sidebar of a page.
+
+organization    - The organization dict.
+truncate - A max length for the organization description. If not provided the description
+           will be full length.
+has_context_title - Boolean for whether to display a module-heading for when
+                    this snippet appears within a non-organization template
+                    (e.g. dataset page sidebar)
+
+Example:
+
+    {% snippet 'snippets/organization_li, organization=c.group_dict %}
+
+#}
+
+{% set truncate = truncate or 0 %}
+{% set url = h.url_for(controller='organization', action='read', id=organization.name) %}
+
+{% block info %}
+    <div class="group-text-box">
+        {% if has_context_title %}
+            <h4>{{ _('Organization') }}</h4>
+        {% endif %}
+        {% block inner %}
+            {% block image %}
+                <img class="res-img-logo" src="{{ organization.image_display_url or h.url_for_static('/base/images/placeholder-organization.png') }}" alt="{{ organization.name }}" />
+            {% endblock %}
+            {% block heading %}
+                <strong class="diab-aus-text">{{ organization.title or organization.name }}</strong>
+            {% endblock %}
+            {% block description %}
+                {% if organization.description %}
+                    <p>
+                        {{ h.markdown_extract(organization.description, 180) }}
+                    </p>
+                {% else %}
+                    <p class="empty">{{ _('There is no description for this organization') }}</p>
+                {% endif %}
+            {% endblock %}
+        {% endblock %}
+        <a href="#" class="regi-plus"><i class="fa fa-plus"></i></a>
+    </div>
+{% endblock %}

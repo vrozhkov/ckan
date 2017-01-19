@@ -4,6 +4,7 @@ FROM ckan_libs:latest
 COPY scripts/install.sh /home/user/tmp/install.sh
 COPY scripts/install_postgres.sh /home/user/tmp/install_postgres.sh
 COPY scripts/run_server.sh /home/user/run_server.sh
+COPY scripts/service.sh /etc/init.d/ckan
 COPY confs/development.ini /home/user/tmp/development.ini
 COPY confs/jetty8 /etc/default/jetty8
 
@@ -11,6 +12,10 @@ COPY confs/jetty8 /etc/default/jetty8
 RUN chmod +x /home/user/tmp/install.sh
 RUN chmod +x /home/user/tmp/install_postgres.sh
 RUN chmod +x /home/user/run_server.sh
+RUN chmod +x /etc/init.d/ckan
+
+
+RUN update-rc.d ckan defaults
 
 
 WORKDIR /home/user
@@ -47,4 +52,4 @@ EXPOSE 5000 8983
 CMD service postgresql start && \
 	sh /home/user/tmp/install_postgres.sh && \
 	sh /home/user/tmp/install.sh && \
-	sh /home/user/run_server.sh
+	bash

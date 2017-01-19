@@ -1,0 +1,19 @@
+<th>
+    {{ slide.image }}
+    <img src="/{{ h.get_slider_static_url() }}/{{ slide.image }}" alt="{{ slide.h1 }}" style="height: 50px" />
+</th>
+<th class="show-read-more">{{ slide.h1 }}</th>
+<th class="show-read-more">{{ slide.p }}</th>
+<th>{% if slide.is_text_left %}Left{% else %}Right{% endif %}</th>
+<th>{{ slide.button_left_link }}</th>
+<th>{{ slide.button_left_name }}</th>
+<th>{{ slide.button_left_enabled }}</th>
+<th>{{ slide.button_right_link }}</th>
+<th>{{ slide.button_right_name }}</th>
+<th>{{ slide.button_right_enabled }}</th>
+<th>{{ slide.ordering }}</th>
+<th>{{ slide.is_active }}</th>
+<th>
+    <a href="{{ h.get_slider_url('edit', slide.id_slider) }}">Edit</a>
+    <a href="{{ h.get_slider_url('delete', slide.id_slider) }}">Delete</a>
+</th>
