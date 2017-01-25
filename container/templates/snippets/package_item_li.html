@@ -33,7 +33,7 @@ Example:
         {% if package.resources and not hide_resources %}
             {% block resources_inner %}
                 {% for resource in h.dict_list_reduce(package.resources, 'format') %}
-                    <a href="{{ p_url }}" class="{{ 'datasets-' ~ resource.lower() ~ '-text' }}" data-format="{{ resource.lower() }}">{{ resource.lower() }}</a>
+                    <a href="{{ h.url_for(controller='package', action='read', id=package.name) }}" class="{{ 'datasets-' ~ resource.lower() ~ '-text' }}" data-format="{{ resource.lower() }}">{{ resource.lower() }}</a>
                 {% endfor %}
             {% endblock %}
         {% endif %}

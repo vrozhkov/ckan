@@ -10,9 +10,14 @@
                 <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
               </ul>
             </div>
-            <div class="header-right-box" style="opacity: 0"> 
-                <a href="#" class="live-chat"><i class="fa fa-comments" aria-hidden="true"></i> Live chat</a> 
-                <a href="#" class="clien-text"><i class="fa fa-user" aria-hidden="true"></i> Client area</a> 
+            <div class="header-right-box">
+                {% if not c.userobj %}
+                    <a href="{{ h.url_for(controller='user',action='login') }}" class="clien-text"><i class="fa fa-user" aria-hidden="true"></i> Log in</a>
+                    <a href="#" class="live-chat hidden"><i class="fa fa-comments" aria-hidden="true"></i> Live chat</a>
+                    <a href="#" class="clien-text hidden"><i class="fa fa-user" aria-hidden="true"></i> Client area</a>
+                {% else %}
+                    <a href="{{ h.url_for(controller='user',action='logout') }}" class="clien-text"><i class="fa fa-user" aria-hidden="true"></i> Log out</a>
+                {% endif %}
             </div>
             <div class="clearfix"></div>
             <div class="nav-menu">

@@ -175,8 +175,8 @@ a.navbar-brand {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > .active > a, 
-.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
     border-bottom: 6px solid #29b1fd;
     color: #4c4c4c;
@@ -230,15 +230,17 @@ a.navbar-brand {
     top: 17%;
     left: 10%;
     width: 40%;
+    text-align: center;
 }
 
 .silder-text-box h1 {
     font-family: 'chronicle_display';
     letter-spacing: 0px;
     margin-bottom: 17px;
-    font-size: 70px;
+    font-size: 50px;
     color: #0c112a;
     line-height: 61px;
+    white-space: nowrap;
 }
 
 .silder-text-box p {

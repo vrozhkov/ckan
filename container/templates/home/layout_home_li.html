@@ -2,39 +2,37 @@
   <div id="owl-demo" class="owl-carousel owl-theme">
     <div class="item"><img src="{{ h.url_for_static('/base/images/Banner1.jpg')}}" class="img-responsive" alt="The Last of us">
       <div class="silder-text-box">
-        <h1>Welcome to the <br /> NDSS InfoNet <br />
-          Your information network</h1>
-        <p>Mauris est tellus, mollis et facilisis et, rutrum ut erat. Suspendisse efficitur risus non libero hendrerit blandit. Donec tincidunt odio id egestas lobortis.</p>
+        <h1>Welcome to the NDSS InfoNet</h1>
+          <h1>Your information network</h1>
+        <p>There were 1,239,551 people with diabetes registered on the NDSS.</p>
         <a href="{{ h.url_for(controller='home', action='about') }}" class="about-nddss">About NDSS</a> <a href="{{ h.url('dataset') }}" class="Datasets-button">Datasets</a> </div>
     </div>
     <div class="item"><img src="{{ h.url_for_static('/base/images/Banner2.jpg')}}" class="img-responsive" alt="The Last of us">
       <div class="silder-text-box sild-home-two">
-        <h1>Welcome to the <br /> NDSS InfoNet <br />
-          Your information network</h1>
-        <p>Mauris est tellus, mollis et facilisis et, rutrum ut erat. Suspendisse efficitur risus non libero hendrerit blandit. Donec tincidunt odio id egestas lobortis.</p>
+        <h1>Welcome to the NDSS InfoNet</h1>
+          <h1>Your information network</h1>
+        <p>Over the last 12 months 106,753 people with diabetes were registered.</p>
         <a href="{{ h.url_for(controller='home', action='about') }}" class="about-nddss">About NDSS</a> <a href="{{ h.url('dataset') }}" class="Datasets-button">Datasets</a> </div>
     </div>
     <div class="item"><img src="{{ h.url_for_static('/base/images/Banner3.jpg')}}" class="img-responsive" alt="The Last of us">
       <div class="silder-text-box">
-        <h1>Welcome to the <br /> NDSS InfoNet <br />
-          Your information network</h1>
-        <p>Mauris est tellus, mollis et facilisis et, rutrum ut erat. Suspendisse efficitur risus non libero hendrerit blandit. Donec tincidunt odio id egestas lobortis.</p>
+        <h1>Welcome to the NDSS InfoNet</h1>
+          <h1>Your information network</h1>
+        <p>16,234 people with diabetes were aged 20 years or under.</p>
         <a href="{{ h.url_for(controller='home', action='about') }}" class="about-nddss">About NDSS</a> <a href="{{ h.url('dataset') }}" class="Datasets-button">Datasets</a> </div>
     </div>
     <div class="item"><img src="{{ h.url_for_static('/base/images/Banner4.jpg')}}" class="img-responsive" alt="The Last of us">
       <div class="silder-text-box">
-        <h1>Welcome to the <br /> NDSS InfoNet <br />
-          Your information network</h1>
-        <p>Mauris est tellus, mollis et facilisis et, rutrum ut erat. Suspendisse efficitur risus non libero hendrerit blandit. Donec tincidunt odio id egestas lobortis.</p>
+        <h1>Welcome to the NDSS InfoNet</h1>
+          <h1>Your information network</h1>
+        <p>791,040 people with diabetes were aged 60 years or older.</p>
         <a href="{{ h.url_for(controller='home', action='about') }}" class="about-nddss">About NDSS</a> <a href="{{ h.url('dataset') }}" class="Datasets-button">Datasets</a> </div>
     </div>
     <div class="item"><img src="{{ h.url_for_static('/base/images/Banner5.jpg')}}" class="img-responsive" alt="The Last of us">
       <div class="silder-text-box">
-        <h1>Welcome to the <br /> NDSS InfoNet </h1>
-          <p>Your information network</p>
-        <!-- <h1>Welcome to the <br />
-          NDSS Data Portal</h1> -->
-        <p>Mauris est tellus, mollis et facilisis et, rutrum ut erat. Suspendisse efficitur risus non libero hendrerit blandit. Donec tincidunt odio id egestas lobortis.</p>
+        <h1>Welcome to the NDSS InfoNet</h1>
+          <h1>Your information network</h1>
+        <p></p>
         <a href="{{ h.url_for(controller='home', action='about') }}" class="about-nddss">About NDSS</a> <a href="{{ h.url('dataset') }}" class="Datasets-button">Datasets</a> </div>
     </div>
   </div>
@@ -59,7 +57,12 @@
             {% endif %}
         {% endblock %}
         <a href="#" class="buttons-one">Learn more</a> </div>
-      <div class="col-sm-5 col-lg-5 col-md-5 col-xs-12 welcome-img-box"> <img src="{{ h.url_for_static('/base/images/welcome-img.png')}}" class="img-responsive about-home-img" /></div>
+      <div class="col-sm-5 col-lg-5 col-md-5 col-xs-12 welcome-img-box">
+        <!-- <img src="{{ h.url_for_static('/base/images/welcome-img.png')}}" class="img-responsive about-home-img" /> -->
+        <video width="" height="320" controls autoplay muted loop>
+          <source src="{{ h.url_for_static('/base/video/NDSS_TVC_2_2017_01_10_v02.mp4') }}" type="video/mp4" />
+        </video>
+      </div>
       <div class="clearfix"></div>
     </div>
   </div>
